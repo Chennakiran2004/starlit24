@@ -19,21 +19,28 @@
 // reportWebVitals();
 
 
-import { StrictMode } from 'react';
+import { StrictMode, useEffect } from 'react';
 import { createRoot } from 'react-dom/client';
 import App from './App';
 import './index.css';
 import { Navbar } from './components/Navbar';
 import { Contact } from './components/Contact';
 
-import { Routes, Route, BrowserRouter as Router } from 'react-router-dom';
+import { Routes, Route, BrowserRouter as Router, useLocation } from 'react-router-dom';
 import { ActivityDetails } from './components/activities/ActivityDetails';
 import Quizzotopia from './components/quizzotopia';
-
+function ScrollToTop() {
+  const { pathname } = useLocation();
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+  return null;
+}
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
     <Router>
       <Navbar />
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<App />} />
         <Route path="/activity/IndoorGames" element={<ActivityDetails />} />

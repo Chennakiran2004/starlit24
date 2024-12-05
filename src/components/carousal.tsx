@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Slider, { Settings } from "react-slick";
 // Import slick-carousel's CSS in your main component or entry point (index.tsx, App.tsx, etc.)
 import "slick-carousel/slick/slick.css";
@@ -43,7 +43,7 @@ const Testimonials: React.FC = () => {
     // beforeChange: handleBeforeChange,
     centerPadding: "50px", // Adds padding on both sides of the center slide
     focusOnSelect: true, // Ensures that the centered slide is clickable
-
+  
     responsive: [
       {
         // From 600px to 900px
@@ -70,12 +70,13 @@ const Testimonials: React.FC = () => {
       },
     ],
   };
+  
 
   return (
-    <div className="ourCoreTeam">
+    <div className="ourCoreTeam" id="gallery">
       <div className="heading">
-        <h1 className="gallery-head" style={{ color: "rgb(107 33 168 )" }}>
-          Gallery
+        <h1 className = "gallery-head" style={{ color: "rgb(107 33 168 )" }}>
+          Gallery 
         </h1>
       </div>
       <div className="innerContainer">
@@ -83,11 +84,11 @@ const Testimonials: React.FC = () => {
           <Slider {...settings}>
             {TestimonialsArray.map((eachPerson) => (
               <div key={eachPerson.id}>
-                {/* <img
+                <img
                   src={eachPerson.image}
                   alt={`Image of ${eachPerson.id}`}
                   className="Crousel-image"
-                /> */}
+                />
               </div>
             ))}
           </Slider>

@@ -1,21 +1,23 @@
-// import React from 'react';
-import { Clock } from "lucide-react";
-import { Link } from "react-router-dom";
+
+
+import { Clock, User } from 'lucide-react';
+import { Link } from 'react-router-dom';
+
 interface ActivityCardProps {
   id: any;
   title: string;
   time: string;
   description: string;
   location: string;
-  category: "cultural" | "sports" | "technical";
+  category: 'cultural' | 'sports' | 'technical';
   poc?: string;
   subPoc?: string;
 }
 
 const categoryColors = {
-  cultural: "bg-pink-100 text-pink-800",
-  sports: "bg-green-100 text-green-800",
-  technical: "bg-blue-100 text-blue-800",
+  cultural: 'bg-pink-100 text-pink-800',
+  sports: 'bg-green-100 text-green-800',
+  technical: 'bg-blue-100 text-blue-800',
 };
 
 export function ActivityCard({
@@ -23,8 +25,8 @@ export function ActivityCard({
   title,
   time,
   description,
-  location,
   category,
+  location,
 }: ActivityCardProps) {
   return (
     <div className="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow">
@@ -46,7 +48,6 @@ export function ActivityCard({
         <p className="text-gray-600 mb-4">{description}</p>
         <Link to={`/activity/${id}`}>
           <button
-            // href="#register"
             className="inline-block bg-purple-600 hover:bg-purple-700 text-white font-bold py-3 px-8 rounded-full transition-colors"
           >
             Register Now
