@@ -3,7 +3,7 @@ import React from "react";
 import { Hero } from "./components/Hero";
 import { ActivitiesSection } from "./components/activities/ActivitiesSection";
 import { Highlights } from "./components/Highlights";
-import { Contact } from "./components/Contact";
+// import { Contact } from "./components/Contact";
 import Leaderboard from "./components/activities/leaderboard";
 import Testimonials from "./components/carousal";
 import { FAQ } from "./components/FAQ";
