@@ -42,7 +42,7 @@ const LeaderboardLineChart: React.FC = () => {
       return idA - idB; // Sort numerically
     });
     setStandings(sortedStandings);
-  });
+  }, [setStandings, standings]);
 
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down("sm")); // Responsive check
