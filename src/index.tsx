@@ -45,6 +45,9 @@ createRoot(document.getElementById('root')!).render(
         <Route path="/" element={<App />} />
         <Route path="/activity/IndoorGames" element={<ActivityDetails />} />
         <Route path="/activity/Quizzotopia" element={<Quizzotopia />} />
+        {/* <Route path="/activity/Free Fire" element={<Quizzotopia />} /> */}
+
+        
       </Routes>
       <Contact />
     </Router>
