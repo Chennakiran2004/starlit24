@@ -23,35 +23,31 @@
     }
 
     /* Main container to center the card */
-    .chesscard {
+    /* .chesscard {
         display: flex;
         justify-content: center;
         align-items: center;
 
-        /* Ensures content is vertically centered */
         padding: 20px;
         background-image: url("https://i.ibb.co/JpYK7Xc/photo-1654457066813-234e82a5e3e0.jpg");
         background-size: cover;
 
     }
-
+ */
 
 
     /* Heading styling */
-    header {
-        text-align: center;
-        margin-bottom: 30px;
-    }
+
 
     .title {
         font-size: 3.3rem;
-        margin-top: 4rem;
+        margin-top: 1rem;
         font-weight: bold;
         color: #ffd700;
         text-transform: uppercase;
         letter-spacing: 2px;
         text-align: center;
-        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+
     }
 
     /* Section styling */

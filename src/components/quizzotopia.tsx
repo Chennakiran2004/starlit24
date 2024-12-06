@@ -9,7 +9,7 @@ const Quizzotopia = () => {
         <p>Unleash Your Creativity with Artificial Intelligence!</p>
       </header>
 
-      <section className="guidelines">
+      {/* <section className="guidelines">
         <h2>📌 Guidelines</h2>
         <ul>
           <li>🎥 <strong>Video Topic:</strong> Create an innovative video using AI tools.</li>
@@ -28,50 +28,9 @@ const Quizzotopia = () => {
             </ul>
           </li>
         </ul>
-      </section>
+      </section> */}
 
-      <section className="submission-form">
-        <h2>🔍 Submission Details</h2>
-        <form>
-          <label>
-            Class Name:
-            <input type="text" placeholder="Enter Class Name" />
-          </label>
-
-          <label>
-            Title of the Video:
-            <input type="text" placeholder="Enter Video Title" />
-          </label>
-
-          <label>
-            Description of the Video:
-            <textarea placeholder="Briefly describe the theme and content." />
-          </label>
-
-          <label>
-            AI Tools Used:
-            <input type="text" placeholder="List AI tools and technologies used." />
-          </label>
-
-          <label>
-            Video Length:
-            <input type="text" placeholder="Enter video length (minutes:seconds)" />
-          </label>
-
-          <label>
-            Link to the Video:
-            <input type="text" placeholder="Paste video link" />
-          </label>
-
-          <label>
-            Team Members:
-            <textarea placeholder="List team members and their roles." />
-          </label>
-
-          <button type="submit" className="submit-btn">Submit</button>
-        </form>
-      </section>
-
+      
       <footer className="declaration">
         <h3>📝 Declaration</h3>
         <p>

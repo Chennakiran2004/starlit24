@@ -3,8 +3,10 @@ import './fooseball.css';
 
 const FoosballRules = () => {
   return (
-    <div className="fooseballcon">
-      <div className="content">
+    <div className="containerFreeFire">
+    <div className="content">
+    <img style={{ width: '48vw' }} src="https://i.ibb.co/bjVZSkC/istockphoto-473174430-640x640.jpg" alt="Free Fire Rules" />
+    <div>
         <header>
           <h1 className="title">Foosball Rules</h1>
         </header>
@@ -38,6 +40,7 @@ const FoosballRules = () => {
           <p>Play fair, stay sharp, and enjoy the game!</p>
         </section>
       </div>
+    </div>
     </div>
   );
 };

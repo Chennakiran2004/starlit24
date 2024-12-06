@@ -3,8 +3,10 @@ import './chess.css';
 
 const ChessCompetitionRules = () => {
   return (
-    <div className="chesscard">
+    <div className="containerFreeFire">
       <div className="content">
+      <img style={{ width: '48vw' }} src="https://e1.pxfuel.com/desktop-wallpaper/775/699/desktop-wallpaper-chess-black-and-white-chess.jpg" alt="Free Fire Rules" />
+      <div>
         <header>
           <h1 className="title">Chess Competition Rules</h1>
         </header>
@@ -56,6 +58,7 @@ const ChessCompetitionRules = () => {
           <p>Disputes during online or traditional matches will be resolved by the arbiter, whose decisions are final.</p>
         </section>
       </div>
+    </div>
     </div>
   );
 };

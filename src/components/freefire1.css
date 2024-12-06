@@ -1,14 +1,14 @@
-/* FreeFireRules.css */
+  /* FreeFireRules.css */
 
-/* Reset default margin and padding */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+  /* Reset default margin and padding */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
 
-/* Set a background image for the whole page */
-/* body {
+  /* Set a background image for the whole page */
+  /* body {
         font-family: 'Arial', sans-serif;
 
         background-size: cover;
@@ -21,73 +21,111 @@
 
     } */
 
-/* Main container to center the card */
-.container {
+  /* Main container to center the card */
+  /* .container {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* Ensures content is vertically centered */
   padding: 20px;
-  background-image: url("https://i.ibb.co/SxzSmDL/garena-free-fire-elite-kelly-v77zktl2a94i1pir.webp");
-}
+  background-image: url("/public/free-fire-4k.jpg");
+  background-size: cover;
+} */
 
-/* Heading styling */
-header {
-  text-align: center;
-  margin-bottom: 30px;
-}
+  /* Heading styling */
 
-.title {
-  font-size: 3.3rem;
-  margin-top: 4rem;
-  font-weight: bold;
-  color: #ffd700;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  text-align: center;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-}
-
-/* Section styling */
-.section {
-  margin-bottom: 20px;
-}
-
-.section-title {
-  font-size: 2rem;
-  color: ffc53e;
-  font-weight: bold;
-  margin-bottom: 10px;
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
-}
-
-section p {
-  font-size: 1.5rem;
-  font-weight: bold;
-  color: ffc53e;
-  line-height: 1.7;
-}
-
-section strong {
-  color: white;
-  /* Gold color for emphasis */
-}
-
-/* Add responsive design for smaller screens */
-@media (max-width: 768px) {
-  .content {
-    padding: 20px;
-  }
 
   .title {
-    font-size: 2.2rem;
+    font-size: 3.3rem;
+    margin-top: 1rem;
+    font-weight: bold;
+    color: #ffd700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: center;
+
+  }
+
+  /* Section styling */
+  .section {
+    margin-bottom: 20px;
   }
 
   .section-title {
-    font-size: 1.8rem;
+    font-size: 2rem;
+    color: ffc53e;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
   }
 
   section p {
-    font-size: 1rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: ffc53e;
+    line-height: 1.7;
   }
-}
+
+  section strong {
+    color: black !important;
+    /* Gold color for emphasis */
+  }
+
+  /* Add responsive design for smaller screens */
+  @media (max-width: 768px) {
+    .content {
+      padding: 20px;
+    }
+
+    .title {
+      font-size: 2.2rem;
+    }
+
+    .section-title {
+      font-size: 1.8rem;
+    }
+
+    section p {
+      font-size: 1rem;
+    }
+  }
+
+  .containerFreeFire {
+    padding-top: 10vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .containerFreeFire img {
+    width: 62vw;
+    height: 34vh;
+    border-radius: 20px;
+
+    @media (max-width: 768px) {
+      width: 90vw;
+
+    }
+  }
+
+
+  .containerFreeFire h2 {
+    color: rgb(107 33 168)
+  }
+
+  .containerFreeFire p {
+    color: black !important;
+  }
+
+  .content {
+    width: 74vw;
+
+    @media (max-width: 768px) {
+      width: 90vw;
+
+    }
+  }
+
+  .containerFreeFire h3 {
+    color: black !important;
+
+  }

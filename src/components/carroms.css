@@ -35,20 +35,17 @@ body {
 }
 
 /* Heading styling */
-header {
-    text-align: center;
-    margin-bottom: 30px;
-}
+
 
 .title {
     font-size: 3.3rem;
-    margin-top: 4rem;
+    margin-top: 1rem;
     font-weight: bold;
     color: #ffc53e;
     text-transform: uppercase;
     letter-spacing: 2px;
     text-align: center;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+
 }
 
 /* Section styling */

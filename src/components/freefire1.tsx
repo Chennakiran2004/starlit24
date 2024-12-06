@@ -1,10 +1,15 @@
 import React from 'react';
 import './freefire1.css';
+// import "../../public/free-fire-4k.jpg"
 
 const FreeFireRules = () => {
+  
+
   return (
-    <div className="container">
+    <div className="containerFreeFire">
       <div className="content">
+      <img src="/free-fire-4k.jpg" alt="Free Fire Rules" />
+      <div>
         <header>
           <h1 className="title">Free Fire Clash Squad Rules</h1>
         </header>
@@ -41,6 +46,7 @@ const FreeFireRules = () => {
           <p>Manage resources wisely for the best chance of victory.</p>
           <p>Enjoy the fast-paced action and strategic gameplay!</p>
         </section>
+      </div>
       </div>
     </div>
   );

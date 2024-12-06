@@ -3,8 +3,10 @@ import './airhocky.css';
 
 const AirHockeyRules = () => {
   return (
-    <div className="airhockeycon">
-      <div className="content">
+    <div className="containerFreeFire">
+    <div className="content">
+    <img style={{ width: '48vw' }} src="https://i.ibb.co/YBWknNQ/istockphoto-1214516801-612x612.jpg" alt="Free Fire Rules" />
+    <div>
         <header>
           <h1 className="title">Air Hockey Rules</h1>
         </header>
@@ -58,6 +60,8 @@ const AirHockeyRules = () => {
           <h2 className="section-title">Enjoy the game and play fair!</h2>
         </section>
       </div>
+      </div>
+
     </div>
   );
 };

@@ -3,8 +3,10 @@ import './carroms.css';
 
 const CarromCompetitionRules = () => {
   return (
-    <div className="carromscon">
-      <div className="content">
+    <div className="containerFreeFire">
+    <div className="content">
+    <img style={{ width: '48vw' }} src="https://i.ibb.co/HNWPPX3/istockphoto-484864454-612x612.jpg" alt="Free Fire Rules" />
+    <div>
         <header>
           <h1 className="title">Carrom Competition Rules</h1>
         </header>
@@ -49,6 +51,8 @@ const CarromCompetitionRules = () => {
         </section>
       </div>
     </div>
+    </div>
+
   );
 };
 
