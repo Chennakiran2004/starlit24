@@ -18,24 +18,27 @@
 // // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 // reportWebVitals();
 
+import { StrictMode, useEffect } from "react";
+import { createRoot } from "react-dom/client";
+import App from "./App";
+import "./index.css";
+import { Navbar } from "./components/Navbar";
+import { Contact } from "./components/Contact";
 
-import { StrictMode, useEffect } from 'react';
-import { createRoot } from 'react-dom/client';
-import App from './App';
-import './index.css';
-import { Navbar } from './components/Navbar';
-import { Contact } from './components/Contact';
-
-import { Routes, Route, BrowserRouter as Router, useLocation } from 'react-router-dom';
-import { ActivityDetails } from './components/activities/ActivityDetails';
-import Quizzotopia from './components/quizzotopia';
-import Freefirerules from './components/freefire1';
-import ChessRules from './components/chess1';
-import AirHockeyRules from './components/airhocky1';
-import FreeFireRules from './components/freefire1';
-import TableTennisRules from './components/tabletennis';
-import CarromRules from './components/carroms';
-import FoosballRules from './components/fooseball';
+import {
+  Routes,
+  Route,
+  BrowserRouter as Router,
+  useLocation,
+} from "react-router-dom";
+import { ActivityDetails } from "./components/activities/ActivityDetails";
+import Quizzotopia from "./components/quizzotopia";
+import Freefirerules from "./components/freefire1";
+import ChessRules from "./components/chess1";
+import AirHockeyRules from "./components/airhocky1";
+import TableTennisRules from "./components/tabletennis";
+import CarromRules from "./components/carroms";
+import FoosballRules from "./components/fooseball";
 function ScrollToTop() {
   const { pathname } = useLocation();
   useEffect(() => {
@@ -43,7 +46,7 @@ function ScrollToTop() {
   }, [pathname]);
   return null;
 }
-createRoot(document.getElementById('root')!).render(
+createRoot(document.getElementById("root")!).render(
   <StrictMode>
     <Router>
       <Navbar />
@@ -53,18 +56,16 @@ createRoot(document.getElementById('root')!).render(
         <Route path="/activity/IndoorGames" element={<ActivityDetails />} />
         <Route path="/activity/Quizzotopia" element={<Quizzotopia />} />
         <Route path="/activity/FreeFire" element={<Freefirerules />} />
-        <Route path="/activity/ChessChess" element={<ChessRules/>} />
-         <Route path="/activity/AirHockey" element={<AirHockeyRules/>} />
-         <Route path="/activity/TableTennies" element={<TableTennisRules/>} />
-         <Route path="/activity/Carroms" element={<CarromRules/>} />
-         <Route path="/activity/FooseBall" element={<FoosballRules/>} />
-        
+        <Route path="/activity/ChessChess" element={<ChessRules />} />
+        <Route path="/activity/AirHockey" element={<AirHockeyRules />} />
+        <Route path="/activity/TableTennies" element={<TableTennisRules />} />
+        <Route path="/activity/Carroms" element={<CarromRules />} />
+        <Route path="/activity/FooseBall" element={<FoosballRules />} />
       </Routes>
       <Contact />
     </Router>
   </StrictMode>
 );
-
 
 // import React from "react";
 // import ReactDOM from "react-dom/client";
@@ -97,7 +98,7 @@ createRoot(document.getElementById('root')!).render(
 //       <Navbar />
 //       <ScrollToTop />
 //       <Routes>
-        
+
 //         <Route path="/activity/IndoorGames" element={<ActivityDetails />} />
 //         <Route path="/activity/Quizzotopia" element={<Quizzotopia />} />
 //         <Route  path="/" element={<App />} />
