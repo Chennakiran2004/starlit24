@@ -6,8 +6,8 @@ import { ActivityCard } from "./ActivityCard";
 import { activities } from '../../data/activities';
 
 export function ActivitiesSection() {
-  // const [filter, setFilter] = useState<"Today" | "Upcoming Events">("Today");
-  const [filter, setFilter] = useState<"Today">("Today");
+  const [filter, setFilter] = useState<"Today" | "Upcoming Events">("Today");
+  // const [filter, setFilter] = useState<"Today">("Today");
 
 
   const filteredActivities =
@@ -33,7 +33,7 @@ export function ActivitiesSection() {
         </p>
 
         <div className="flex justify-center gap-4 mb-12 flex-wrap">
-          {["Today"].map((category) => (
+          {["Today","Upcoming Events"].map((category) => (
             <button
               key={category}
               onClick={() => setFilter(category as any)}
