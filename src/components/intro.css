@@ -29,6 +29,7 @@
 .upper-container-absolute-xl video {
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5), 0 0 15px rgba(127, 61, 255, 0.6), 0 0 30px rgba(127, 61, 255, 0.4);
     border-radius: 20px;
+    margin: auto;
 
 }
 
@@ -46,6 +47,9 @@
 .upper-container-absolute-xl {
     position: relative;
     bottom: 82%;
-    left: 9%;
+    left: 0;
+
+
+
     /* align-items: center; */
 }
