@@ -1,0 +1,51 @@
+.body-xl-container {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    /* background-color: black; */
+    /* position: relative;
+    z-index: -1; */
+    align-items: center;
+    background-color: #0d081a;
+    display: flex;
+    flex: none;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 10px;
+    /* height: min-content; */
+    justify-content: center;
+    overflow: hidden;
+
+}
+
+.video-container-layout-xl {
+    height: 100vh;
+    width: 100%;
+
+    padding: 20px;
+}
+
+.upper-container-absolute-xl video {
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5), 0 0 15px rgba(127, 61, 255, 0.6), 0 0 30px rgba(127, 61, 255, 0.4);
+    border-radius: 20px;
+
+}
+
+.video {
+    filter: blur(7px);
+
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+.upper-container-absolute-xl {
+    position: relative;
+    bottom: 82%;
+    left: 9%;
+    /* align-items: center; */
+}

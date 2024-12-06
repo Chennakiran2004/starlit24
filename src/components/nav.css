@@ -1,0 +1,75 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.header {
+    text-align: center;
+    background-color: #6a0dad;
+    color: white;
+    padding: 20px;
+    position: relative;
+}
+
+.logo-wrapper {
+    position: relative;
+    transition: all 0.3s ease-in-out;
+}
+
+.logo {
+    width: 100px;
+    transition: all 0.3s ease-in-out;
+}
+
+.title {
+    margin: 10px 0 0;
+}
+
+.subtitle {
+    margin: 5px 0 0;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #4b0082;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    z-index: 10;
+    transition: all 0.3s ease-in-out;
+}
+
+.nav-logo {
+    display: none;
+    align-items: center;
+}
+
+.logo-small {
+    width: 50px;
+    transition: all 0.3s ease-in-out;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    cursor: pointer;
+}
+
+/* Transition for the logo to move into the navbar */
+.scrolled .logo-wrapper {
+    transform: scale(0.5) translateY(-150px);
+}
+
+.scrolled .nav-logo {
+    display: flex;
+}
