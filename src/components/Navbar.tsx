@@ -91,10 +91,11 @@ export function Navbar() {
   return (
     <nav className="bg-purple-800 text-white fixed w-full z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-16">
+        <div className="flex items-center justify-between h-16" style={{height:"70px"}}>
           <div className="flex items-center">
             {/* <PartyPopper className="h-8 w-8 mr-2" /> */}
-            <span className="font-bold text-xl">Starlit 2024</span>
+            <img style={{height:"85px", marginTop:"p3x"}} src="https://i.ibb.co/HV8DpnR/final-pic-1.png" />
+            {/* <span className="font-bold text-xl">Starlit 24</span> */}
           </div>
 
           {/* Desktop Menu */}
