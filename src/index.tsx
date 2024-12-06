@@ -1,6 +1,6 @@
 import { StrictMode, useEffect } from "react";
 import { createRoot } from "react-dom/client";
-import React, { useState } from "react";
+import React from "react";
 import App from "./App";
 import "./index.css";
 
