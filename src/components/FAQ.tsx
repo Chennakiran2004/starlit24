@@ -15,7 +15,7 @@ const faqs = [
   },
   {
     question: "Is there an entry fee ?",
-    answer: "No, The event is only conducted for students."
+    answer: "Yes, The event is conducted for students."
   }
 ];
 
