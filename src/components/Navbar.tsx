@@ -110,14 +110,9 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16" style={{height:"70px"}}>
           <div className="flex items-center">
-<<<<<<< HEAD
             {/* <PartyPopper className="h-8 w-8 mr-2" /> */}
-            <img style={{height:"85px", marginTop:"p3x"}} src="https://i.ibb.co/HV8DpnR/final-pic-1.png" />
+            <img src="https://i.ibb.co/HV8DpnR/final-pic-1.png" alt="final-pic-1" style={{ width: "68px", height: "74px" }}/>
             {/* <span className="font-bold text-xl">Starlit 24</span> */}
-=======
-          
-              <img src="https://i.ibb.co/HV8DpnR/final-pic-1.png" alt="final-pic-1" style={{ width: "68px", height: "74px" }}/>
->>>>>>> a7fa5de40b030ae57d7c53208ad5e2962e7d1c44
           </div>
 
           {/* Desktop Menu */}
