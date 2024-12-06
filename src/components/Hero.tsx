@@ -1,7 +1,7 @@
 import React from 'react';
 import { Calendar, MapPin } from 'lucide-react';
 import { CountdownTimer } from './CountdownTimer';
-import AnimatedLogo from './animation';
+
 
 export function Hero() {
 
@@ -22,7 +22,7 @@ export function Hero() {
      
       
       <div className="relative z-10 text-center text-white px-4 max-w-5xl mx-auto">
-      <AnimatedLogo/>
+     
         <h1 className="text-5xl md:text-7xl font-bold mb-6">NIAT Starlit 2024</h1>
         <p className="text-xl md:text-2xl mb-12">"A Day of Glitz, Glamour, and New Beginnings!"</p>
         

@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Menu, X } from "lucide-react";
-import { Link, useNavigate } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -9,6 +9,8 @@ export default function Navbar() {
     offset: number;
   } | null>(null);
   const navigate = useNavigate();
+  const location = useLocation();
+  console.log(location)
   const [isScrolled, setIsScrolled] = useState(false);
 
   useEffect(() => {
@@ -104,8 +106,7 @@ export default function Navbar() {
     
     <nav
       className={`fixed w-full z-50 transition-colors duration-300 text-white ${
-        isScrolled ? "bg-purple-800" : "bg-transparent"
-      }`}
+        location.pathname!=="/Home" || isScrolled ? "bg-purple-800" : "bg-transparent"} `}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16" style={{height:"70px"}}>

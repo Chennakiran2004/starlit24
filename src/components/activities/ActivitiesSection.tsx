@@ -1,19 +1,16 @@
 import React, { useState } from "react";
 import { ActivityCard } from "./ActivityCard";
-// import React from 'react';
-// import { Clock, User } from 'lucide-react';
-// import { Link } from "react-router-dom"
-import { activities } from '../../data/activities';
+import { activities } from "../../data/activities";
 
 export function ActivitiesSection() {
-  const [filter, setFilter] = useState<"Today" | "Upcoming Events">("Today");
-  // const [filter, setFilter] = useState<"Today">("Today");
-
+  const [filter, setFilter] = useState<"Previous Events" | "Today" | "Upcoming Events">("Today");
 
   const filteredActivities =
     filter === "Today"
-      ?activities.filter((activity) => activity.date === "today")
-      : activities.filter((activity) => activity.date !== "today");
+      ? activities.filter((activity) => activity.date === "today")
+      : filter === "Upcoming Events"
+      ? activities.filter((activity) => activity.date !== "today" && activity.date !== "past")
+      : activities.filter((activity) => activity.date === "past");
 
   return (
     <div id="activities" className="py-20 bg-gray-50">
@@ -33,7 +30,7 @@ export function ActivitiesSection() {
         </p>
 
         <div className="flex justify-center gap-4 mb-12 flex-wrap">
-          {["Today","Upcoming Events"].map((category) => (
+          {["Previous Events", "Today", "Upcoming Events"].map((category) => (
             <button
               key={category}
               onClick={() => setFilter(category as any)}
@@ -50,8 +47,7 @@ export function ActivitiesSection() {
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {filteredActivities.map((activity, index) => {
-            const { id, title, time, description, location, category } =
-              activity;
+            const { id, title, time, description, location, category } = activity;
             return (
               <ActivityCard
                 key={index}
