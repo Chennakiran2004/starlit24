@@ -1,64 +1,6 @@
 import React, { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-import styled, { keyframes } from "styled-components";
-import {
-
-  TextMainConainer,
-} from "./styled";
-import "./intro.css";
-// Define the scale-in animation using keyframes
-const scaleIn = keyframes`
-  0% {
-    transform: scale(0);
-    opacity: 0;
-  }
-  100% {
-    transform: scale(1);
-    opacity: 1;
-  }
-`;
-
-const IntroStartingContainer = styled.div`
-  width: 100% !important;
-  height: 100vh !important;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: #000;
-
-  @media screen and (min-width: 768px) {
-    width: 100vw;
-  }
-
-  @media screen and (min-width: 1280px) and (max-width: 1792px) and (min-resolution: 2dppx) {
-    overflow: auto;
-    scrollbar-width: none;
-  }
-`;
-
-const IntroSubContainer = styled.div`
-  width: 100vw !important;
-  height: 100vh !important;
-  background-color: #7f3dff;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-
-  @media screen and (min-width: 768px) {
-    width: 768px;
-    height: 72vh;
-    margin: auto;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15); /* Add shadow here */
-  }
-`;
-
-const Heading = styled.h1`
-  font-size: 36px;
-  color: white;
-  animation: ${scaleIn} 1s ease-in-out;
-`;
+import styled from "styled-components";
 
 const StyledVideo = styled.video`
   width: auto;
