@@ -15,7 +15,7 @@ import "./App.css";
 function App() {
   return (
     <div className="min-h-screen" style={{ backgroundColor: "white" }}>
-      <Hero />
+      <Hero  />
       <ActivitiesSection />
       <Highlights />
       <Testimonials />

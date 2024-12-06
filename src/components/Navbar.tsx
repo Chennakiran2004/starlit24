@@ -2,13 +2,14 @@ import React, { useEffect, useState } from "react";
 import { Menu, X } from "lucide-react";
 import { Link, useNavigate } from "react-router-dom";
 
-export function Navbar() {
+export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const [scrollTo, setScrollTo] = useState<{
     id: string;
     offset: number;
   } | null>(null);
   const navigate = useNavigate();
+  const [isScrolled, setIsScrolled] = useState(false);
 
   useEffect(() => {
     if (scrollTo) {
@@ -22,7 +23,18 @@ export function Navbar() {
       setScrollTo(null);
     }
   }, [scrollTo]);
+  useEffect(() => {
+    const handleScroll = () => {
+      const heroHeight = document.getElementById("hero")?.offsetHeight || 0;
+      setIsScrolled(window.scrollY > heroHeight);
+    };
 
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
   const handleScrollTo = (id: string, offset = 0) => {
     setScrollTo({ id, offset });
   };
@@ -89,13 +101,23 @@ export function Navbar() {
   };
 
   return (
-    <nav className="bg-purple-800 text-white fixed w-full z-50">
+    
+    <nav
+      className={`fixed w-full z-50 transition-colors duration-300 text-white ${
+        isScrolled ? "bg-purple-800" : "bg-transparent"
+      }`}
+    >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16" style={{height:"70px"}}>
           <div className="flex items-center">
+<<<<<<< HEAD
             {/* <PartyPopper className="h-8 w-8 mr-2" /> */}
             <img style={{height:"85px", marginTop:"p3x"}} src="https://i.ibb.co/HV8DpnR/final-pic-1.png" />
             {/* <span className="font-bold text-xl">Starlit 24</span> */}
+=======
+          
+              <img src="https://i.ibb.co/HV8DpnR/final-pic-1.png" alt="final-pic-1" style={{ width: "68px", height: "74px" }}/>
+>>>>>>> a7fa5de40b030ae57d7c53208ad5e2962e7d1c44
           </div>
 
           {/* Desktop Menu */}
@@ -207,3 +229,4 @@ export function Navbar() {
     </nav>
   );
 }
+
