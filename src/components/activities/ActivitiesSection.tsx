@@ -6,11 +6,13 @@ import { ActivityCard } from "./ActivityCard";
 import { activities } from '../../data/activities';
 
 export function ActivitiesSection() {
-  const [filter, setFilter] = useState<"Today" | "Upcoming Events">("Today");
+  // const [filter, setFilter] = useState<"Today" | "Upcoming Events">("Today");
+  const [filter, setFilter] = useState<"Today">("Today");
+
 
   const filteredActivities =
     filter === "Today"
-      ? activities.filter((activity) => activity.date === "today")
+      ?activities.filter((activity) => activity.date === "today")
       : activities.filter((activity) => activity.date !== "today");
 
   return (
@@ -31,7 +33,7 @@ export function ActivitiesSection() {
         </p>
 
         <div className="flex justify-center gap-4 mb-12 flex-wrap">
-          {["Today", "Upcoming Events"].map((category) => (
+          {["Today"].map((category) => (
             <button
               key={category}
               onClick={() => setFilter(category as any)}
