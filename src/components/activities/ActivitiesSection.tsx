@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { ActivityCard } from './ActivityCard';
 // import React from 'react';
-import { Clock, User } from 'lucide-react';
-import { Link } from "react-router-dom"
+// import { Clock, User } from 'lucide-react';
+// import { Link } from "react-router-dom"
 import { activities } from '../../data/activities';
 
 export function ActivitiesSection() {

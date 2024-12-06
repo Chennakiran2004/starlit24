@@ -59,7 +59,7 @@ const Testimonials: React.FC = () => {
       },
       {
         // Below 600px
-        breakpoint: 600,
+        breakpoint: 700,
         settings: {
           centerMode: false, // Disable center mode for very small screens
           slidesToShow: 1,
@@ -83,11 +83,11 @@ const Testimonials: React.FC = () => {
           <Slider {...settings}>
             {TestimonialsArray.map((eachPerson) => (
               <div key={eachPerson.id}>
-                {/* <img
+                 <img
                   src={eachPerson.image}
-                  alt={`Image of ${eachPerson.id}`}
+                  alt={` ${eachPerson.id}`}
                   className="Crousel-image"
-                /> */}
+                /> 
               </div>
             ))}
           </Slider>

@@ -18,7 +18,7 @@ interface ClassStanding {
 
 const LeaderboardLineChart: React.FC = () => {
   const [standings, setStandings] = useState<ClassStanding[]>([
-    { className: "s1", points: 46 },
+    { className: "s1", points: 70 },
     { className: "s2", points: 23 },
     { className: "s3", points: 56 },
     { className: "s4", points: 78 },

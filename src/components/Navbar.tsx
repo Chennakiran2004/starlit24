@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Menu, X, PartyPopper } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { Link, useNavigate } from "react-router-dom";
 
 export function Navbar() {

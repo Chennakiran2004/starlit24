@@ -87,14 +87,14 @@
   display: flex;
   flex-wrap: nowrap;
   /* Ensure all slides are in a single row */
-  width: 5790px !important;
+  /* width: 5790px !important; */
   /* Make sure the track does not exceed container width */
   column-gap: 1%;
 
-  @media (max-width: 424px) {
+  /* @media (max-width: 424px) {
     width: 4686px !important;
 
-  }
+  } */
 
   /* Optional: Add space between slides */
 }
