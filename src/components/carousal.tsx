@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/img-redundant-alt */
 import React from "react";
 import Slider, { Settings } from "react-slick";
 // Import slick-carousel's CSS in your main component or entry point (index.tsx, App.tsx, etc.)
@@ -83,11 +84,11 @@ const Testimonials: React.FC = () => {
           <Slider {...settings}>
             {TestimonialsArray.map((eachPerson) => (
               <div key={eachPerson.id}>
-                {/* <img
+                <img
                   src={eachPerson.image}
                   alt={`Image of ${eachPerson.id}`}
                   className="Crousel-image"
-                /> */}
+                />
               </div>
             ))}
           </Slider>
