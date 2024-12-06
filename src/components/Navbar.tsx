@@ -9,8 +9,10 @@ export default function Navbar() {
     offset: number;
   } | null>(null);
   const navigate = useNavigate();
-  const [isScrolled, setIsScrolled] = useState(false);
   const location = useLocation();
+  console.log(location)
+  const [isScrolled, setIsScrolled] = useState(false);
+  // const location = useLocation();
 
   useEffect(() => {
     if (scrollTo) {
@@ -109,10 +111,11 @@ export default function Navbar() {
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-16">
+        <div className="flex items-center justify-between h-16" style={{height:"70px"}}>
           <div className="flex items-center">
-          
-              <img src="https://i.ibb.co/HV8DpnR/final-pic-1.png" alt="final-pic-1" style={{ width: "68px", height: "74px" }}/>
+            {/* <PartyPopper className="h-8 w-8 mr-2" /> */}
+            <img src="https://i.ibb.co/HV8DpnR/final-pic-1.png" alt="final-pic-1" style={{ width: "68px", height: "74px" }}/>
+            {/* <span className="font-bold text-xl">Starlit 24</span> */}
           </div>
 
           {/* Desktop Menu */}

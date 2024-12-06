@@ -7,7 +7,7 @@ const faqs = [
   },
   {
     question: "What is the event duration ?",
-    answer: "Total duration of the event will be 6 hours starting from 12PM to 6PM."
+    answer: "Total duration of the event will be 6 hours starting from 2PM to 8PM."
   },
   {
     question: "Can you participate in multiple activities ?",
