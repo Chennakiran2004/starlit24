@@ -22,7 +22,7 @@ const StartingPage = () => {
     // Redirect to another page after 2.9 seconds
     const timer = setTimeout(() => {
       navigate("/Home"); // Replace '/Home' with the route you want to redirect to
-    }, 4500);
+    }, 5500);
 
     // Cleanup the timer when the component is unmounted
     return () => clearTimeout(timer);
