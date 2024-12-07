@@ -41,7 +41,7 @@ const StartingPage = () => {
   autoPlay
   loop
   muted
-  preload="auto"
+  // preload="auto"
   className="video"
 >
   <source

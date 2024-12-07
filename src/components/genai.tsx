@@ -1,14 +1,15 @@
 import React from 'react';
 import './genai.css';
+import { Link } from 'react-router-dom';
 
 const GenAIVideoSubmissionForm = () => {
   return (
     <div className="genai-app">
       <header className="genai-header">
       <div className="ramp-back-button-container">
-        <a href="/Home" className="ramp-back-button"> 
+        <Link to="/Home">
         <img src='/back-arrow.svg' alt='Back'/>
-         </a>
+        </Link>
         <h1>GEN AI Video Submission Guidelines</h1>
       </div>
       </header>

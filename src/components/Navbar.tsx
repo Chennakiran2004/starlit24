@@ -111,14 +111,16 @@ export default function Navbar() {
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-16" style={{height:"70px"}}>
-          <div className="flex items-center">
+        <div className="flex items-center justify-around h-16" style={{height:"70px"}}>
             {/* <PartyPopper className="h-8 w-8 mr-2" /> */}
+            { location.pathname !== "/Home" || isScrolled ?
+          <div className="flex items-center">
+
             <Link to="/Home">
             <img  src="https://i.ibb.co/HV8DpnR/final-pic-1.png" alt="final-pic-1" style={{ width: "68px", height: "74px" }}/>
-            </Link>
+            </Link></div> : null}
             {/* <span className="font-bold text-xl">Starlit 24</span> */}
-          </div>
+          
 
           {/* Desktop Menu */}
           <div className="hidden md:flex items-center space-x-6 ml-10">

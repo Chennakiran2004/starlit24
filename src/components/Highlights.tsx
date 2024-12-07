@@ -1,5 +1,5 @@
 import React from 'react';
-import { Music, Gift, Utensils, Camera } from 'lucide-react';
+import { Music, Gift, Camera } from 'lucide-react';
 
 export function Highlights() {
   const highlights = [
@@ -14,7 +14,7 @@ export function Highlights() {
       description: "The Thrill of Winning Starts Here."
     },
     {
-      icon: <Utensils className="w-8 h-8" />,
+      icon: <img src="/star.svg" style={{width:"34px"}} alt='Ramp walk'/>,
       title: "Ramp Walk",
       description: "Where Style Meets The Spotlight."
     },
