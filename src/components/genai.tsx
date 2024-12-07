@@ -5,12 +5,15 @@ const GenAIVideoSubmissionForm = () => {
   return (
     <div className="genai-app">
       <header className="genai-header">
+      <div className="ramp-back-button-container">
+        <a href="/Home" className="ramp-back-button"> 
+        <img src='/back-arrow.svg' alt='Back'/>
+         </a>
         <h1>GEN AI Video Submission Guidelines</h1>
+      </div>
       </header>
 
-      <div className="ramp-back-button-container">
-        <a href="/Home" className="ramp-back-button">Back</a>
-      </div>
+   
 
       <div className="genai-container">
         <h2 className="genai-section-title">Video Topic</h2>

@@ -3,17 +3,7 @@ import { useNavigate } from "react-router-dom";
 import styled from "styled-components";
 
 import "./intro.css";
-// Define the scale-in animation using keyframes
-// const scaleIn = keyframes`
-//   0% {
-//     transform: scale(0);
-//     opacity: 0;
-//   }
-//   100% {
-//     transform: scale(1);
-//     opacity: 1;
-//   }
-// `;
+
 
 
 const StyledVideo = styled.video`

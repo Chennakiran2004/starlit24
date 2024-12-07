@@ -1,93 +1,138 @@
-/* CarromCompetitionRules.css */
-
-/* Reset default margin and padding */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-/* Set a background image for the whole page */
-body {
+  }
+  
+  .carroms-app {
     font-family: 'Arial', sans-serif;
-
-    /* Add your background image URL here */
-    background-size: cover;
-    height: 100vh;
-    background-position: center;
-    background-attachment: fixed;
-    color: white;
-    font-weight: bold;
-    padding: 0;
-}
-
-/* Main container to center the card */
-.carromscon {
+    background: #f3f4f6;
+    color: #333;
+    width: 100vw;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
-    /* Ensures content is vertically centered */
     padding: 20px;
-    background-image: url("https://i.ibb.co/HNWPPX3/istockphoto-484864454-612x612.jpg");
-    /* Replace with an appropriate Carrom image */
-    background-size: cover;
-}
-
-/* Heading styling */
-
-
-.title {
-    font-size: 3.3rem;
-    margin-top: 1rem;
-    font-weight: bold;
-    color: #ffc53e;
-    text-transform: uppercase;
-    letter-spacing: 2px;
+    overflow: auto;
+  }
+  
+  .carroms-header {
+    background-color: #1e2a47;
+    color: #fff;
+    padding: 20px 40px;
+    width: 100%;
     text-align: center;
-
-}
-
-/* Section styling */
-.section {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-top: 70px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     margin-bottom: 20px;
-}
-
-.section-title {
-    font-size: 2rem;
-    color: #ffc53e;
-    font-weight: bold;
+  }
+  
+  .carroms-header h1 {
     margin-bottom: 10px;
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
-}
-
-section p {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: white !important;
-    line-height: 1.7;
-}
-
-section strong {
-    color: white;
-    /* Gold color for emphasis */
-}
-
-/* Add responsive design for smaller screens */
-@media (max-width: 768px) {
-    .content {
-        padding: 20px;
+  }
+  
+  .carroms-back-button-container {
+    position: relative;
+    padding-top: 30px;
+    display: flex;
+    justify-content: flex-start;
+    margin-top: -20px; /* Pull the back button slightly up */
+    width: 100%;
+    padding-left: 20px;
+  }
+  
+  .carroms-back-button {
+    background-color: #ff6f61;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+  
+  .carroms-back-button:hover {
+    background-color: #f85f44;
+    transform: scale(1.1);
+  }
+  
+  .carroms-container {
+    max-width: 900px;
+    width: 100%;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    margin-top: 40px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .carroms-section-title {
+    color: #2f3e56;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-weight: 600;
+    border-bottom: 2px solid #ff6f61;
+    padding-bottom: 5px;
+  }
+  
+  .carroms-list {
+    list-style-type: none;
+    padding-left: 0;
+    margin-bottom: 20px;
+  }
+  
+  .carroms-list-item {
+    font-size: 1.2rem;
+    padding: 10px 0;
+    line-height: 1.6;
+    color: #555;
+    display: flex;
+    align-items: center;
+  }
+  
+  .carroms-list-item::before {
+    content: '';
+    width: 20px;
+    height: 20px;
+    background-color: #ff6f61;
+    clip-path: polygon(100% 50%, 0 100%, 100% 0);
+    margin-right: 15px;
+  }
+  
+  .carroms-footer {
+    text-align: center;
+    padding: 15px 0;
+    background-color: #1e2a47;
+    color: #fff;
+    font-size: 1rem;
+    width: 100%;
+    position: relative;
+    margin-top: 40px;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .carroms-header h1 {
+      font-size: 2rem;
     }
-
-    .title {
-        font-size: 2.2rem;
+  
+    .carroms-container {
+      padding: 15px;
     }
-
-    .section-title {
-        font-size: 1.8rem;
+  
+    .carroms-section-title {
+      font-size: 1.6rem;
     }
-
-    section p {
-        font-size: 1rem;
+  
+    .carroms-list-item {
+      font-size: 1rem;
     }
-}
+  }

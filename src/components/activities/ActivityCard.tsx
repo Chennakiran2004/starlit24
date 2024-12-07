@@ -7,15 +7,18 @@ interface ActivityCardProps {
   time: string;
   description: string;
   location: string;
-  category: "cultural" | "sports" | "technical";
+  category: "Cultural" | "IndoorSports" | "Technical"| "ArtsShowCase" | "ESports";
+  buttonElement:string;
   poc?: string;
   subPoc?: string;
 }
 
 const categoryColors = {
-  cultural: "bg-pink-100 text-pink-800",
-  sports: "bg-green-100 text-green-800",
-  technical: "bg-blue-100 text-blue-800",
+  Cultural: "bg-pink-100 text-pink-800",
+  IndoorSports: "bg-green-100 text-green-800",
+  Technical: "bg-blue-100 text-blue-800",
+  ArtsShowCase:"bg-pink-100 text-blue-800",
+  ESports:"bg-orange-100 text-blue-800",
 };
 
 
@@ -27,6 +30,7 @@ export function ActivityCard({
   description,
   category,
   location,
+  buttonElement,
 }: ActivityCardProps) {
   return (
     <div className="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow">
@@ -46,11 +50,12 @@ export function ActivityCard({
           </span>
         </div>
         <p className="text-gray-600 mb-4">{description}</p>
+        {buttonElement==="True" &&
         <a href = {`/activity/${id}`}>
           <button className="inline-block bg-purple-600 hover:bg-purple-700 text-white font-bold py-3 px-8 rounded-full transition-colors">
             Explore More
           </button>
-        </a>
+        </a>}
       </div>
     </div>
   );

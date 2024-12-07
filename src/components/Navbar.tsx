@@ -114,7 +114,9 @@ export default function Navbar() {
         <div className="flex items-center justify-between h-16" style={{height:"70px"}}>
           <div className="flex items-center">
             {/* <PartyPopper className="h-8 w-8 mr-2" /> */}
-            <img src="https://i.ibb.co/HV8DpnR/final-pic-1.png" alt="final-pic-1" style={{ width: "68px", height: "74px" }}/>
+            <Link to="/Home">
+            <img  src="https://i.ibb.co/HV8DpnR/final-pic-1.png" alt="final-pic-1" style={{ width: "68px", height: "74px" }}/>
+            </Link>
             {/* <span className="font-bold text-xl">Starlit 24</span> */}
           </div>
 

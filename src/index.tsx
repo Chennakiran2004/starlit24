@@ -15,6 +15,9 @@ import AirHockeyRules from './components/airhocky1';
 import TableTennisRules from './components/tabletennis';
 import CarromRules from './components/carroms';
 import FoosballRules from './components/fooseball';
+import GenAIVideoSubmissionForm from "./components/genai";
+import WebsiteAboutSection from "./components/website";
+import RampWalk from "./components/rampwalk";
 import StartingPage from "./components/intro";
 import Navbar  from "./components/Navbar";
 function ScrollToTop() {
@@ -44,7 +47,10 @@ function AppOuter() {
         <Route path="/activity/AirHockey" element={<AirHockeyRules />} />
         <Route path="/activity/TableTennies" element={<TableTennisRules />} />
         <Route path="/activity/Carroms" element={<CarromRules />} />
+        <Route path="/activity/Rampwalk" element={<RampWalk />} />
         <Route path="/activity/FooseBall" element={<FoosballRules />} />
+        <Route path="/activity/Genai" element={<GenAIVideoSubmissionForm />} />
+        <Route path="/activity/Website" element={<WebsiteAboutSection />} />
       </Routes>
       {pathname !== "/" && <Contact />}
     </>

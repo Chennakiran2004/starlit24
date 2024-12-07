@@ -41,7 +41,9 @@ export function Contact() {
           <div className="text-center p-6 rounded-lg bg-purple-50">
             <MapPin className="w-8 h-8 mx-auto mb-4 text-purple-600" />
             <h3 className="text-gray-600">Venue</h3>
+            <a href = "https://www.google.com/maps/place/P+V+Conventions/@17.3423148,78.3190736,17z/data=!3m1!4b1!4m6!3m5!1s0x3bcb95ad71763d95:0xbd4d4e3b0de2acef!8m2!3d17.3423097!4d78.3216485!16s%2Fg%2F11sgbl63zh?entry=ttu&g_ep=EgoyMDI0MTIwNC4wIKXMDSoASAFQAw%3D%3D">
             <p className="text-gray-600">PV Conventions</p>
+            </a>
           </div>
         </div>
       </div>

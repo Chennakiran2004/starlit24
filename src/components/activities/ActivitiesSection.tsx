@@ -47,7 +47,7 @@ export function ActivitiesSection() {
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {filteredActivities.map((activity, index) => {
-            const { id, title, time, description, location, category } = activity;
+            const { id, title, time, description, location, category,buttonElement } = activity;
             return (
               <ActivityCard
                 key={index}
@@ -56,7 +56,8 @@ export function ActivitiesSection() {
                 time={time}
                 description={description}
                 location={location || ""}
-                category={category as "sports" | "technical" | "cultural"}
+                category={category as  "Cultural" | "IndoorSports" | "Technical" | "ArtsShowCase" |"ESports"}
+                buttonElement={buttonElement}
               />
             );
           })}

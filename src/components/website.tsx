@@ -5,13 +5,20 @@ const WebsiteAboutSection = () => {
   return (
     <div className="website-app">
       <header className="website-header">
-        <h1>Web Integration</h1>
+        
+        <div className="ramp-back-button-container">
+        <a href="/Home" className="ramp-back-button"> 
+        <img src='/back-arrow.svg' alt='Back'/>
+         </a>
+         <h1>Web Integration</h1>
+        
+         
+        
+      </div>
       </header>
 
 
-      <div className="ramp-back-button-container">
-        <a href="/Home" className="ramp-back-button">Back</a>
-      </div>
+
 
       <div className="website-container">
         <h2 className="website-section-title">Introduction</h2>

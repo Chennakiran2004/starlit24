@@ -3,44 +3,53 @@ import './fooseball.css';
 
 const FoosballRules = () => {
   return (
-    <div className="containerFreeFire">
-    <div className="content">
-    <img style={{ width: '48vw' }} src="https://i.ibb.co/bjVZSkC/istockphoto-473174430-640x640.jpg" alt="Free Fire Rules" />
-    <div>
-        <header>
-          <h1 className="title">Foosball Rules</h1>
-        </header>
-        <section className="section">
-          <h2 className="section-title">Objective</h2>
-          <p>Score by hitting the ball into the opponent's goal.</p>
-        </section>
-        <section className="section">
-          <h2 className="section-title">Setup</h2>
-          <p><strong>Players:</strong> Doubles (2v2).</p>
-          <p><strong>Table:</strong> Equipped with rods and player figures.</p>
-        </section>
-        <section className="section">
-          <h2 className="section-title">Gameplay</h2>
-          <p><strong>Serve:</strong> Start by releasing the ball at the center.</p>
-          <p><strong>Scoring:</strong> A goal counts when the ball enters the opponent's goal.</p>
-          <p><strong>No Spinning:</strong> Rods cannot spin more than 360°.</p>
-          <p><strong>Possession:</strong> Control only your side of the rods.</p>
-        </section>
-        <section className="section">
-          <h2 className="section-title">Winning</h2>
-          <p>First to reach 5 or 10 goals wins.</p>
-        </section>
-        <section className="section">
-          <h2 className="section-title">Fouls</h2>
-          <p><strong>Excessive spinning</strong> or table jarring.</p>
-          <p><strong>Interfering with opponent's rods.</strong></p>
-        </section>
-        <section className="section">
-          <h2 className="section-title">Tips for Success</h2>
-          <p>Play fair, stay sharp, and enjoy the game!</p>
-        </section>
+    <div className="foosball-app">
+      <header className="foosball-header">
+        <div className="ramp-back-button-container">
+        <a href="/Home" className="ramp-back-button"> 
+        <img src='/back-arrow.svg' alt='Back'/>
+         </a>
+         <h1>Foosball Game Rules</h1>
+        
       </div>
-    </div>
+      </header>
+
+
+      <div className="foosball-container">
+        <h2 className="foosball-section-title">Objective</h2>
+        <ul className="foosball-list">
+          <li className="foosball-list-item">Score by getting the ball into the opponent's goal.</li>
+        </ul>
+
+        <h2 className="foosball-section-title">Setup</h2>
+        <ul className="foosball-list">
+          <li className="foosball-list-item">2v2 game, played on a table with rods and figures.</li>
+        </ul>
+
+        <h2 className="foosball-section-title">Gameplay</h2>
+        <ul className="foosball-list">
+          <li className="foosball-list-item"><strong>Serve:</strong> Start by releasing the ball at the center.</li>
+          <li className="foosball-list-item"><strong>Scoring:</strong> Goal when the ball enters the opponent’s goal.</li>
+          <li className="foosball-list-item"><strong>No Spinning:</strong> Rods can't spin more than 360°.</li>
+          <li className="foosball-list-item"><strong>Possession:</strong> Control only your side of the rods.</li>
+          <li className="foosball-list-item"><strong>Winning:</strong> First to 5 or 10 goals wins.</li>
+        </ul>
+
+        <h2 className="foosball-section-title">Fouls</h2>
+        <ul className="foosball-list">
+          <li className="foosball-list-item">Excessive spinning, table jarring, or interfering with opponent’s rods.</li>
+        </ul>
+
+        <h2 className="foosball-section-title">Winning</h2>
+        <ul className="foosball-list">
+          <li className="foosball-list-item">The team with the most goals wins the game.</li>
+        </ul>
+
+        <h2 className="foosball-section-title">Tips</h2>
+        <ul className="foosball-list">
+          <li className="foosball-list-item">Aim precisely and strategize to block opponents' rods for better control.</li>
+        </ul>
+      </div>
     </div>
   );
 };
