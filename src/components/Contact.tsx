@@ -34,8 +34,8 @@ export function Contact() {
           <div className="text-center p-6 rounded-lg bg-purple-50">
             <Mail className="w-8 h-8 mx-auto mb-4 text-purple-600" />
             <h3 className="text-gray-600">Email</h3>
-            <p className="text-gray-600">freshers@niat.edu</p>
-            <p className="text-gray-600">support@niat.edu</p>
+            <p className="text-gray-600">Startlitfreshers24@gmail.com</p>
+            {/* <p className="text-gray-600">support@niat.edu</p> */}
           </div>
 
           <div className="text-center p-6 rounded-lg bg-purple-50">

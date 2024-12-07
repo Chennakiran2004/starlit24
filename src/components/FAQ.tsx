@@ -16,7 +16,7 @@ const faqs = [
   },
   {
     question: "Is there an entry fee?",
-    answer: "No, The event is conducted for students.",
+    answer: "No, there is no entry fee for the Starlit Event.",
   },
 ];
 
