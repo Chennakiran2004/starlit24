@@ -26,7 +26,9 @@ export function Hero({ handleTimerCompletion }: HeroProps) {
      
       
       <div className="relative z-10 text-center text-white px-4 max-w-5xl mx-auto">
-     
+         <div style={{display:"flex", justifyContent:"center"}}>
+          <img src="https://i.ibb.co/HV8DpnR/final-pic-1.png" style={{height:"300px", width:"300px"}}/>
+         </div>
         <h1 className="text-5xl md:text-7xl font-bold mb-6">NIAT Starlit 2024</h1>
         <p className="text-xl md:text-2xl mb-12">"A Day of Glitz, Glamour, and New Beginnings!"</p>
         
