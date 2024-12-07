@@ -12,6 +12,7 @@ export default function Navbar() {
   const location = useLocation();
   console.log(location)
   const [isScrolled, setIsScrolled] = useState(false);
+  // const location = useLocation();
 
   useEffect(() => {
     if (scrollTo) {
@@ -106,7 +107,8 @@ export default function Navbar() {
     
     <nav
       className={`fixed w-full z-50 transition-colors duration-300 text-white ${
-        location.pathname!=="/Home" || isScrolled ? "bg-purple-800" : "bg-transparent"} `}
+        location.pathname !== "/Home" || isScrolled ? "bg-purple-800" : "bg-transparent"
+      }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16" style={{height:"70px"}}>
@@ -120,7 +122,7 @@ export default function Navbar() {
           <div className="hidden md:flex items-center space-x-6 ml-10">
             {/* {navItems.map((item, index) => ( */}
             <Link
-              to="/"
+              to="/Home"
               className="hover:bg-purple-700 px-3 py-2 rounded-md transition-colors"
             >
               Home

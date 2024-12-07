@@ -3,7 +3,11 @@ import { Calendar, MapPin } from 'lucide-react';
 import { CountdownTimer } from './CountdownTimer';
 
 
-export function Hero() {
+interface HeroProps {
+  handleTimerCompletion: () => void; // Declare the function prop
+}
+
+export function Hero({ handleTimerCompletion }: HeroProps) {
 
 
 
@@ -26,7 +30,8 @@ export function Hero() {
         <h1 className="text-5xl md:text-7xl font-bold mb-6">NIAT Starlit 2024</h1>
         <p className="text-xl md:text-2xl mb-12">"A Day of Glitz, Glamour, and New Beginnings!"</p>
         
-        <CountdownTimer />
+      <CountdownTimer onTimerComplete={handleTimerCompletion} />
+        
         
         <div className="flex flex-col md:flex-row items-center justify-center gap-6 mt-12 mb-8">
           <div className="flex items-center">
