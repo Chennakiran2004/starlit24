@@ -19,7 +19,7 @@ const QuizCompetitionDetails = () => {
           <li className="quiz-list-item"><strong style={{marginRight:"9px"}}>Event Name:</strong> Inter-Section Quiz Competition</li>
           <li className="quiz-list-item"><strong style={{marginRight:"9px"}}>Date of Event:</strong> 📅 9-12-24;</li>
           <li className="quiz-list-item"><strong style={{marginRight:"9px"}}>Venue:</strong> 📍 kapil Kavuri hub</li>
-          <li className="quiz-list-item"><strong style={{marginRight:"9px"}}>Time:</strong> ⏰ 2:ooPM</li>
+          <li className="quiz-list-item"><strong style={{marginRight:"9px"}}>Time:</strong> ⏰ 2:00PM</li>
         </ul>
 
         <h2 className="quiz-section-title">Overview</h2>
