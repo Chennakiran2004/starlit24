@@ -30,7 +30,7 @@ export function FAQ() {
   return (
     <div id="faq" className="py-20 bg-gradient-to-b from-purple-100 to-purple-50">
       <div className="max-w-4xl mx-auto px-4">
-        <h1 className="text-5xl font-bold text-center mb-8 text-purple-800">
+        <h1 className="text-5xl font-bold text-center mb-8 text-purple-800" style={{fontSize:"33px"}}>
           Frequently Asked Questions
         </h1>
         <p className="text-center text-gray-600 mb-12">

@@ -3,7 +3,7 @@ export const activities = [
     id: "Quizzotopia",
     title: "Quizzotopia",
     time: "12:00 PM - 1:30 PM",
-    date: "othertime",
+    date: "today",
     description: "Test your knowledge in this exciting quiz competition",
     location: "Main Auditorium",
     category: "Cultural",
@@ -43,7 +43,7 @@ export const activities = [
   },
   {
     id: "TableTennies",
-    title: "Table Tennis 🏓",
+    title: "Table Tennis",
     description:
       "TableTennies League is on! League matches are done. Check the upcoming events for what’s next!",
     date: "past",
@@ -53,7 +53,7 @@ export const activities = [
   },
   {
     id: "TableTennies",
-    title: "Table Tennis 🏓",
+    title: "Table Tennis",
     description:
       "TableTennies Finals 🏆The ultimate battle is on 10th Dec 2024! Don’t miss it!",
     date: "othertime",
@@ -83,7 +83,7 @@ export const activities = [
   },
   {
     id: "FooseBall",
-    title: "Foosball 🏉",
+    title: "Foosball",
     date: "past",
     description:
       "FooseBall League is on! League matches are done. Check the upcoming events for what’s next!",
@@ -93,7 +93,7 @@ export const activities = [
   },
   {
     id: "FooseBall",
-    title: "Foosball 🏉",
+    title: "Foosball",
     date: "othertime",
     description:
       "FooseBall Finals 🏆The ultimate battle is on 10th Dec 2024! Don’t miss it!",
@@ -103,7 +103,7 @@ export const activities = [
   },
   {
     id: "Carroms",
-    title: "Carroms 🎴",
+    title: "Carroms",
     date: "past",
     description:
       "Carroms League is on! League matches are done. Check the upcoming events for what’s next!",
@@ -113,7 +113,7 @@ export const activities = [
   },
   {
     id: "Carroms",
-    title: "Carroms 🎴",
+    title: "Carroms",
     date: "othertime",
     description:
       "Carroms Finals 🏆The ultimate battle is on 10th Dec 2024! Don’t miss it!",

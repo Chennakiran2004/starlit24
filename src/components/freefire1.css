@@ -1,3 +1,4 @@
+/* Global styles */
 * {
   margin: 0;
   padding: 0;
@@ -11,7 +12,7 @@
   width: 100vw;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   padding: 20px;
   overflow: auto;
@@ -25,38 +26,53 @@
   text-align: center;
   font-size: 2.5rem;
   font-weight: bold;
-  margin-top: 70px;
+  margin-top: 65px;
   border-radius: 10px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
   margin-bottom: 20px;
+  position: relative;  /* Allow positioning of the back button */
+}
+
+.ramp-back-button{
+  background-color: #1e2a47;
 }
 
 .freefire-header h1 {
   margin-bottom: 10px;
+  padding-left: 51px;
+  text-align: center !important;
 }
 
+/* Back button container */
 .freefire-back-button-container {
-  position: relative;
-  padding-top: 30px;
+  position: absolute;  /* Absolute position to the top-left corner */
+  top: 20px;
+  left: 20px;
+  z-index: 10;
   display: flex;
-  justify-content: flex-start;
-  margin-top: -20px;
-  width: 100%;
-  padding-left: 20px;
+  align-items: center;
 }
 
 .freefire-back-button {
-  background-color: #ff6f61;
+  
   color: #fff;
   text-decoration: none;
-  padding: 10px 20px;
-  font-size: 1rem;
-  border-radius: 5px;
+  padding: 10px;
+  font-size: 1.2rem;
+  border-radius: 50%;
   transition: background-color 0.3s, transform 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.freefire-back-button img {
+  width: 20px;
+  height: 20px;
 }
 
 .freefire-back-button:hover {
-  background-color: #f85f44;
+ 
   transform: scale(1.1);
 }
 
@@ -74,20 +90,20 @@
   justify-content: space-between;
 }
 
+/* Section titles */
 .freefire-section-title {
   color: #2f3e56;
   font-size: 1.8rem;
-  margin-bottom: 20px;
   text-transform: uppercase;
   font-weight: 600;
-  border-bottom: 2px solid #ff6f61;
+
   padding-bottom: 5px;
 }
 
+/* List styles */
 .freefire-list {
   list-style-type: none;
   padding-left: 0;
-  margin-bottom: 20px;
 }
 
 .freefire-list-item {
@@ -96,18 +112,20 @@
   line-height: 1.6;
   color: #555;
   display: flex;
+  padding-left: 10px;
   align-items: center;
 }
 
+/* Custom bullet points */
 .freefire-list-item::before {
   content: '';
   width: 20px;
   height: 20px;
-  background-color: #ff6f61;
   clip-path: polygon(100% 50%, 0 100%, 100% 0);
   margin-right: 15px;
 }
 
+/* Footer */
 .freefire-footer {
   text-align: center;
   padding: 15px 0;
@@ -119,13 +137,16 @@
   margin-top: 40px;
 }
 
+/* Media Queries for responsiveness */
 @media screen and (max-width: 768px) {
-  .freefire-header h1 {
+  .freefire-header {
+    padding: 20px;
     font-size: 2rem;
   }
 
   .freefire-container {
     padding: 15px;
+    margin-top: 20px;
   }
 
   .freefire-section-title {
@@ -134,5 +155,64 @@
 
   .freefire-list-item {
     font-size: 1rem;
+  }
+
+  .freefire-back-button-container {
+    padding-left: 10px;
+    padding-top: 15px;
+  }
+
+  .freefire-back-button {
+    font-size: 1rem;
+    padding: 6px;
+  }
+
+  .freefire-back-button img {
+    width: 18px;
+    height: 18px;
+  }
+
+  .freefire-footer {
+    padding: 10px;
+    font-size: 0.9rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .freefire-header {
+    font-size: 1.8rem;
+    padding: 15px;
+  }
+
+  .freefire-container {
+    padding: 10px;
+  }
+
+  .freefire-section-title {
+    font-size: 1.4rem;
+  }
+
+  .freefire-list-item {
+    font-size: 0.9rem;
+  }
+
+  .freefire-back-button-container {
+    padding-left: 8px;
+    padding-top: 10px;
+  }
+
+  .freefire-back-button {
+    font-size: 0.9rem;
+    padding: 7px;
+  }
+
+  .freefire-back-button img {
+    width: 16px;
+    height: 16px;
+  }
+
+  .freefire-footer {
+    padding: 8px;
+    font-size: 0.8rem;
   }
 }

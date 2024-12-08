@@ -191,32 +191,38 @@ export default function Navbar() {
             >
               Home
             </Link>
+            <hr style={{backgroundColor:"#ddb7fc", width:"100%"}}/>
             <li className="listNav" onClick={handleProjectsClick}>
               <p className="hover:bg-purple-700 px-3 py-2 rounded-md transition-colors">
                 Schedule
               </p>
             </li>
+            <hr style={{backgroundColor:"#ddb7fc", width:"100%"}}/>
             <li className="listNav" onClick={handleHighlightsClick}>
               <p className="hover:bg-purple-700 px-3 py-2 rounded-md transition-colors">
                 Highlights
               </p>
             </li>
+            <hr style={{backgroundColor:"#ddb7fc", width:"100%"}}/>
             <li className="listNav" onClick={handleLeaderboard}>
               <p className="hover:bg-purple-700 px-3 py-2 rounded-md transition-colors">
                 Leaderboard
               </p>
             </li>
+            <hr style={{backgroundColor:"#ddb7fc", width:"100%"}}/>
             <li className="listNav" onClick={handleImpactClick}>
               <p className="hover:bg-purple-700 px-3 py-2 rounded-md transition-colors">
                 Gallery
               </p>
             </li>
+            <hr style={{backgroundColor:"#ddb7fc", width:"100%"}}/>
             <li className="listNav" onClick={handleFaq}>
               <p className="hover:bg-purple-700 px-3 py-2 rounded-md transition-colors">
                 {" "}
                 FAQ
               </p>
             </li>
+            <hr style={{backgroundColor:"#ddb7fc", width:"100%"}}/>
             <li className="listNav" onClick={handleAboutClick}>
               <p className="hover:bg-purple-700 px-3 py-2 rounded-md transition-colors">
                 {" "}

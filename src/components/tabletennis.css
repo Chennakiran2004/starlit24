@@ -1,138 +1,222 @@
+/* Global styles */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  .tabletennis-app {
-    font-family: 'Arial', sans-serif;
-    background: #f3f4f6;
-    color: #333;
-    width: 100vw;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-    overflow: auto;
-  }
-  
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.tabletennis-app {
+  font-family: 'Arial', sans-serif;
+  background: #f3f4f6;
+  color: #333;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 20px;
+  overflow: auto;
+}
+
+.tabletennis-header {
+  background-color: #1e2a47;
+  color: #fff;
+  padding: 20px 40px;
+  width: 100%;
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-top: 65px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  position: relative;  /* Allow positioning of the back button */
+}
+
+.tabletennis-header h1 {
+  margin-bottom: 10px;
+  padding-left:51px;
+  text-align: center !important;
+}
+
+/* Back button container */
+.ramp-back-button-container {
+  position: absolute;  /* Absolute position to the top-left corner */
+  top: 20px;
+  left: 20px;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+}
+
+.ramp-back-button {
+ 
+  color: #fff;
+  text-decoration: none;
+  padding: 10px;
+  font-size: 1.2rem;
+  border-radius: 50%;
+  transition: background-color 0.3s, transform 0.3s;
+  display: flex;
+  align-items: center;
+  background-color: #1e2a47;
+  justify-content: center;
+}
+
+.ramp-back-button img {
+  width: 20px;
+  height: 20px;
+}
+
+.ramp-back-button:hover {
+  background-color: #f85f44;
+  transform: scale(1.1);
+}
+
+.tabletennis-container {
+  max-width: 900px;
+  width: 100%;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  margin-top: 40px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Section titles */
+.tabletennis-section-title {
+  color: #2f3e56;
+  font-size: 1.8rem;
+  /* margin-bottom: 20px; */
+  text-transform: uppercase;
+  font-weight: 600;
+  border-bottom: 2px solid #ff6f61;
+  padding-bottom: 5px;
+}
+
+/* List styles */
+.tabletennis-list {
+  list-style-type: none;
+  padding-left: 0;
+  /* margin-bottom: 20px; */
+}
+
+.tabletennis-list-item {
+  font-size: 1.2rem;
+  padding: 10px 0;
+  line-height: 1.6;
+  color: #555;
+  display: flex;
+  padding-left:10px;
+  align-items: center;
+}
+
+/* Custom bullet points */
+.tabletennis-list-item::before {
+  content: '';
+  width: 20px;
+  height: 20px;
+  background-color: #ff6f61;
+  clip-path: polygon(100% 50%, 0 100%, 100% 0);
+  margin-right: 15px;
+}
+
+/* Footer */
+.tabletennis-footer {
+  text-align: center;
+  padding: 15px 0;
+  background-color: #1e2a47;
+  color: #fff;
+  font-size: 1rem;
+  width: 100%;
+  position: relative;
+  margin-top: 40px;
+}
+
+/* Media Queries for responsiveness */
+@media screen and (max-width: 768px) {
   .tabletennis-header {
-    background-color: #1e2a47;
-    color: #fff;
-    padding: 20px 40px;
-    width: 100%;
-    text-align: center;
-    font-size: 2.5rem;
-    font-weight: bold;
-    margin-top: 70px;
-    border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px;
-  }
-  
-  .tabletennis-header h1 {
-    margin-bottom: 10px;
-  }
-  
-  .tabletennis-container {
-    max-width: 900px;
-    width: 100%;
-    background-color: #fff;
     padding: 20px;
-    border-radius: 15px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    margin-top: 40px;
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    font-size: 2rem;
   }
-  
+
+  .tabletennis-container {
+    padding: 15px;
+    margin-top: 20px;
+  }
+
   .tabletennis-section-title {
-    color: #2f3e56;
-    font-size: 1.8rem;
-    margin-bottom: 20px;
-    text-transform: uppercase;
-    font-weight: 600;
-    border-bottom: 2px solid #ff6f61;
-    padding-bottom: 5px;
+    font-size: 1.6rem;
   }
-  
-  .tabletennis-list {
-    list-style-type: none;
-    padding-left: 0;
-    margin-bottom: 20px;
-  }
-  
+
   .tabletennis-list-item {
-    font-size: 1.2rem;
-    padding: 10px 0;
-    line-height: 1.6;
-    color: #555;
-    display: flex;
-    align-items: center;
-  }
-  
-  .tabletennis-list-item::before {
-    content: '';
-    width: 20px;
-    height: 20px;
-    background-color: #ff6f61;
-    clip-path: polygon(100% 50%, 0 100%, 100% 0);
-    margin-right: 15px;
-  }
-  
-  .tabletennis-back-button-container {
-    position: relative;
-    padding-top: 30px;
-    display: flex;
-    justify-content: flex-start;
-    margin-top: -20px; /* Pull the back button slightly up */
-    width: 100%;
-    padding-left: 20px;
-  }
-  
-  .tabletennis-back-button {
-    background-color: #ff6f61;
-    color: #fff;
-    text-decoration: none;
-    padding: 10px 20px;
     font-size: 1rem;
-    border-radius: 5px;
-    transition: background-color 0.3s, transform 0.3s;
   }
-  
-  .tabletennis-back-button:hover {
-    background-color: #f85f44;
-    transform: scale(1.1);
+
+  .ramp-back-button-container {
+    padding-left: 10px;
+    padding-top: 15px;
   }
-  
+
+  .ramp-back-button {
+    font-size: 1rem;
+    padding: 6px;
+  }
+
+  .head-container {
+    text-align: center !important;
+  }
+
+  .ramp-back-button img {
+    width: 18px;
+    height: 18px;
+  }
+
   .tabletennis-footer {
-    text-align: center;
-    padding: 15px 0;
-    background-color: #1e2a47;
-    color: #fff;
-    font-size: 1rem;
-    width: 100%;
-    position: relative;
-    margin-top: 40px;
+    padding: 10px;
+    font-size: 0.9rem;
   }
-  
-  @media screen and (max-width: 768px) {
-    .tabletennis-header h1 {
-      font-size: 2rem;
-    }
-  
-    .tabletennis-container {
-      padding: 15px;
-    }
-  
-    .tabletennis-section-title {
-      font-size: 1.6rem;
-    }
-  
-    .tabletennis-list-item {
-      font-size: 1rem;
-    }
+}
+
+@media screen and (max-width: 480px) {
+  .tabletennis-header {
+    font-size: 1.8rem;
+    padding: 15px;
   }
+
+  .tabletennis-container {
+    padding: 10px;
+  }
+
+  .tabletennis-section-title {
+    font-size: 1.4rem;
+  }
+
+  .tabletennis-list-item {
+    font-size: 0.9rem;
+  }
+
+  .ramp-back-button-container {
+    padding-left: 8px;
+    padding-top: 10px;
+  }
+
+  .ramp-back-button {
+    font-size: 0.9rem;
+    padding: 7px;
+  }
+
+  .ramp-back-button img {
+    width: 16px;
+    height: 16px;
+  }
+
+  .tabletennis-footer {
+    padding: 8px;
+    font-size: 0.8rem;
+  }
+}

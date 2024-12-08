@@ -5,17 +5,13 @@ const FreeFireClashSquadRules = () => {
   return (
     <div className="freefire-app">
       <header className="freefire-header">
-        <div className="ramp-back-button-container">
-        <a href="/Home" className="ramp-back-button"> 
-        <img src='/back-arrow.svg' alt='Back'/>
-         </a>
+        <div className="freefire-back-button-container">
+        <a href="/Home" className="ramp-back-button">
+            <img src='/back-arrow.svg' alt='Back'/>
+          </a>
+        </div>
         <h1>Free Fire Clash Squad Rules</h1>
-         
-        
-      </div>
       </header>
-
-      
 
       <div className="freefire-container">
         <h2 className="freefire-section-title">Objective</h2>

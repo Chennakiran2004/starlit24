@@ -5,12 +5,13 @@ const AirHockeyRules = () => {
   return (
     <div className="airhockey-app">
       <header className="airhockey-header">
+        <div className="airhockey-back-button-container">
+          <a href="/Home" className="airhockey-back-button">
+            <img src='/back-arrow.svg' alt='Back' className='backbuttonCon' style={{ height: "20px" }} />
+          </a>
+        </div>
         <h1>Air Hockey Rules</h1>
       </header>
-
-      <div className="airhockey-back-button-container">
-        <a href="/Home" className="airhockey-back-button">Back</a>
-      </div>
 
       <div className="airhockey-container">
         <h2 className="airhockey-section-title">Objective</h2>

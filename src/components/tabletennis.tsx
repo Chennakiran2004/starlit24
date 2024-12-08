@@ -5,19 +5,13 @@ const TableTennisRules = () => {
   return (
     <div className="tabletennis-app">
       <header className="tabletennis-header">
-       
         <div className="ramp-back-button-container">
-        <a href="/Home" className="ramp-back-button"> 
-        <img src='/back-arrow.svg' alt='Back'/>
-         </a>
-         <h1>Table Tennis Rules</h1>
-        
-         
-        
-      </div>
+          <a href="/Home" className="ramp-back-button">
+            <img src='/back-arrow.svg' alt='Back'/>
+          </a>
+        </div>
+        <h1>Table Tennis Rules</h1>
       </header>
-
-    
 
       <div className="tabletennis-container">
         <h2 className="tabletennis-section-title">Objective</h2>
@@ -32,8 +26,8 @@ const TableTennisRules = () => {
 
         <h2 className="tabletennis-section-title">Gameplay</h2>
         <ul className="tabletennis-list">
-          <li className="tabletennis-list-item"><strong>Serve:</strong> Ball must bounce on your side first, then the opponent’s.</li>
-          <li className="tabletennis-list-item"><strong>Rally:</strong> Hit the ball back and forth until one misses or hits it out.</li>
+          <li className="tabletennis-list-item"><strong style={{marginRight:"7px"}}>Serve:</strong> Ball must bounce on your side first, then the opponent’s.</li>
+          <li className="tabletennis-list-item"><strong style={{marginRight:"7px"}}>Rally:</strong> Hit the ball back and forth until one misses or hits it out.</li>
         </ul>
 
         <h2 className="tabletennis-section-title">Scoring</h2>

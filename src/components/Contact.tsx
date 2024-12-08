@@ -26,17 +26,18 @@ export function Contact() {
             <a href="https://www.instagram.com/starlit.niat?igsh=bTkwdDlzM3NiaHRx">
               <p className="text-gray-600"> Starlit.niat </p>
             </a>
-            <a href="https://www.instagram.com/niat_india?igsh=YTEzaDJ1ejZmY2Z1">
-              <p className="text-gray-600"> niat_india </p>
-            </a>
           </div>
 
           <div className="text-center p-6 rounded-lg bg-purple-50">
-            <Mail className="w-8 h-8 mx-auto mb-4 text-purple-600" />
-            <h3 className="text-gray-600">Email</h3>
-            <p className="text-gray-600">freshers@niat.edu</p>
-            <p className="text-gray-600">support@niat.edu</p>
+            <Instagram className="w-8 h-8 mx-auto mb-4 text-purple-600" />
+            <h3 className="text-gray-600">Instagram</h3>
+            <a href="https://www.instagram.com/niat_india?igsh=YTEzaDJ1ejZmY2Z1">
+              <p className="text-gray-600"> niat_india </p>
+            </a>
+           
           </div>
+
+          
 
           <div className="text-center p-6 rounded-lg bg-purple-50">
             <MapPin className="w-8 h-8 mx-auto mb-4 text-purple-600" />
