@@ -1,5 +1,5 @@
 import React from "react";
-import { Mail, MapPin, Instagram } from "lucide-react";
+import {  MapPin, Instagram } from "lucide-react";
 
 export function Contact() {
   return (
