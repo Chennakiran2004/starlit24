@@ -85,15 +85,18 @@ const Testimonials: React.FC = () => {
         </div>
       </div>
       
-      <div className="more-images-container">
-        <h2 className="more-images-heading">Click for More Images</h2>
-        <span
-          className="drive-link"
-          onClick={() => window.open('https://drive.google.com', '_blank')}
-        >
-          Go to Drive
-        </span>
-      </div>
+      
+  <h2 className="more-images-heading" style={{textAlign:"center"}}>Click for More Images</h2>
+  <div className="drive-link-container">
+    <span
+      className="drive-link"
+      onClick={() => window.open('https://drive.google.com', '_blank')}
+    >
+      Go to Drive
+    </span>
+
+</div>
+
     </div>
   );
 };

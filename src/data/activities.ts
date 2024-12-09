@@ -2,11 +2,22 @@ export const activities = [
   {
     id: "Quizzotopia",
     title: "Quizzotopia",
-    time: "Starts from 5:00PM",
+    time: "starts from 5:00PM",
     date: "today",
-    description: "Test your knowledge in this exciting quiz competition",
+    description: "Take a breath and enjoy the wait for the Qyizzotopia finals! 😊",
     location: "Main Auditorium",
     category: "Cultural",
+    buttonElement:"True"
+  },
+
+  {
+    id: "Debate",
+    title: "Debate Competition",
+    time: "starts from 5:00PM",
+    date: "today",
+    description: "Where opinions collide 💥 and the best argument wins the mic 🎤!",
+    location: "Main Auditorium",
+    category: "ArtsShowCase",
     buttonElement:"True"
   },
 
@@ -34,7 +45,7 @@ export const activities = [
   {
     id: "FreeFire",
     title: "Free Fire",
-    date: "othertime",
+    date: "past",
     time: "4:30 PM - 7:00 PM",
     description: "🔥 Garena Free Fire Finals 🏆The ultimate battle is on 10th Dec 2024! 🎮 Don’t miss it!",
     location: "Free Fire Gareena",
@@ -56,7 +67,7 @@ export const activities = [
     title: "Table Tennis",
     description:
       "TableTennies Finals 🏆The ultimate battle is on 10th Dec 2024! Don’t miss it!",
-    date: "othertime",
+    date: "past",
     time: "4:30 PM - 7:00 PM",
     category: "IndoorSports",
     buttonElement:"True"
@@ -77,7 +88,7 @@ export const activities = [
     description:
       "Chess Finals 🏆The ultimate battle is on 10th Dec 2024! Don’t miss it!",
     time: "4:30 PM - 7:00 PM",
-    date: "othertime",
+    date: "past",
     category: "IndoorSports",
     buttonElement:"True"
   },
@@ -94,7 +105,7 @@ export const activities = [
   {
     id: "FooseBall",
     title: "Foosball",
-    date: "othertime",
+    date: "past",
     description:
       "FooseBall Finals 🏆The ultimate battle is on 10th Dec 2024! Don’t miss it!",
     time: "4:30 PM - 7:00 PM",
@@ -114,7 +125,7 @@ export const activities = [
   {
     id: "Carroms",
     title: "Carroms",
-    date: "othertime",
+    date: "past",
     description:
       "Carroms Finals 🏆The ultimate battle is on 10th Dec 2024! Don’t miss it!",
     time: "4:30 PM - 7:00 PM",
@@ -124,7 +135,7 @@ export const activities = [
   {
     id: "AirHockey",
     title: "Air Hockey",
-    date: "pas",
+    date: "past",
     description: "Experience the excitement of fast-paced air hockey battles.",
     time: "4:30 PM - 7:00 PM",
     category: "IndoorSports",
