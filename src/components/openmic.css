@@ -1,0 +1,227 @@
+/* Global styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .openmic-app {
+    font-family: 'Arial', sans-serif;
+    background: #f3f4f6;
+    color: #333;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 20px;
+    overflow: auto;
+  }
+  
+  .openmic-header {
+    background-color: #1e2a47;
+    color: #fff;
+    padding: 40px 8px;
+    width: 90%;
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-top: 70px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    position: relative;
+  }
+  
+  .openmic-header h1 {
+    margin-bottom: 10px;
+    margin-left: 50px;
+  }
+  
+  /* Back button container */
+  .openmic-back-button-container {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    margin-right: 5px;
+  }
+  
+  .openmic-back-button {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    font-size: 1.2rem;
+    border-radius: 50%;
+    transition: background-color 0.3s, transform 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .openmic-back-button img {
+    width: 25px;
+    height: 25px;
+  }
+  
+  .openmic-back-button:hover {
+    transform: scale(1.1);
+  }
+  
+  .openmic-container {
+    max-width: 900px;
+    width: 100%;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    margin-top: 40px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  /* Section titles */
+  .openmic-section-title {
+    color: #2f3e56;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-weight: 600;
+    padding-bottom: 5px;
+  }
+  
+  /* Subsection titles */
+  .openmic-subsection-title {
+    color: #2f3e56;
+    font-size: 1.6rem;
+    margin-top: 20px;
+    font-weight: 500;
+  }
+  
+  /* Subcategory titles */
+  .openmic-subcategory-title {
+    color: #2f3e56;
+    font-size: 1.4rem;
+    font-weight: 400;
+    margin-top: 10px;
+  }
+  
+  /* List styles */
+  .openmic-list {
+    list-style-type: none;
+    padding-left: 0;
+    margin-bottom: 20px;
+  }
+  
+  .openmic-list-item {
+    font-size: 1.2rem;
+    padding: 10px 0;
+    line-height: 1.6;
+    color: #555;
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Custom bullet points */
+  .openmic-list-item::before {
+    content: '';
+    width: 20px;
+    height: 20px;
+    clip-path: polygon(100% 50%, 0 100%, 100% 0);
+    margin-right: 15px;
+  }
+  
+  /* Footer */
+  .openmic-footer {
+    text-align: center;
+    padding: 15px 0;
+    background-color: #1e2a47;
+    color: #fff;
+    font-size: 1rem;
+    width: 100%;
+    position: relative;
+    margin-top: 40px;
+  }
+  
+  /* Media Queries for responsiveness */
+  @media screen and (max-width: 768px) {
+    .openmic-header h1 {
+      font-size: 2rem;
+    }
+  
+    .openmic-container {
+      padding: 15px;
+    }
+  
+    .openmic-section-title {
+      font-size: 1.6rem;
+    }
+  
+    .openmic-list-item {
+      font-size: 1rem;
+    }
+  
+    .openmic-back-button-container {
+      padding-left: 10px;
+      padding-top: 15px;
+    }
+  
+    .openmic-back-button {
+      font-size: 1rem;
+      padding: 6px;
+    }
+  
+    .openmic-back-button img {
+      width: 25px;
+      height: 25px;
+    }
+  
+    .openmic-footer {
+      padding: 10px;
+      font-size: 0.9rem;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .openmic-header {
+      font-size: 1.8rem;
+      padding: 15px;
+    }
+  
+    .openmic-container {
+      padding: 10px;
+    }
+  
+    .openmic-section-title {
+      font-size: 1.4rem;
+    }
+  
+    .openmic-list-item {
+      font-size: 0.9rem;
+    }
+  
+    .openmic-back-button-container {
+      padding-left: 8px;
+      padding-top: 10px;
+    }
+  
+    .openmic-back-button {
+      font-size: 0.9rem;
+      padding: 7px;
+    }
+  
+    .openmic-back-button img {
+      width: 25px;
+      height: 25px;
+    }
+  
+    .openmic-footer {
+      padding: 8px;
+      font-size: 0.8rem;
+    }
+  }
+  

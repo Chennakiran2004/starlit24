@@ -135,14 +135,23 @@ export const activities = [
     title: "Generative AI Short Film Making",
     date: "today",
     description: "Gen AI is a sci-fi short film 🤖 where an AI surpasses its creator, questioning its purpose and existence 🌐. Deadline is on 10th Dec.",
-    time: "After study hours",
+    time: "Project Submission today",
     category: "Technical",
+    buttonElement:"True"
+  },
+  {
+    id: "Openmic",
+    title: "Open Mic",
+    date: "today",
+    description: "Unleash your talent, take the stage, and shine at the Open Mic Event! 🎤✨",
+    time: "5:00PM - 7:00PM",
+    category: "ArtsShowCase",
     buttonElement:"True"
   },
   {
     id: "Website",
     title: "Website Making",
-    date: "today",
+    date: "othertime",
     description: "Website integration 🔧 helps connect cool tools and services to make your site work smoothly and give users an awesome experience Deadline is on 10th Dec.",
     time: "After Studyhours",
     category: "Technical",
@@ -161,7 +170,7 @@ export const activities = [
   {
     id: "Rampwalk",
     title: "Ramp Walk",
-    date: "today",
+    date: "othertime",
     description: "Ramp walk 👗 is when models confidently rock the runway, showing off stylish outfits and having fun while doing it ✨.",
     time: "4:30 PM - 7:00 PM",
     category: "Cultural",
