@@ -2,7 +2,7 @@ export const activities = [
   {
     id: "Quizzotopia",
     title: "Quizzotopia",
-    time: "12:00 PM - 1:30 PM",
+    time: "4:30 PM - 7:00 PM",
     date: "today",
     description: "Test your knowledge in this exciting quiz competition",
     location: "Main Auditorium",
