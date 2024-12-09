@@ -94,7 +94,7 @@ export function Hero({ handleTimerCompletion }: HeroProps) {
         <div className="flex flex-col md:flex-row items-center justify-center gap-6 mt-12 mb-8">
           <div className="flex items-center">
             <Calendar className="mr-2" />
-            <span>December 13, 2024 | 2:00 AM - 8:00 PM</span>
+            <span>December 13, 2024 | 2:00 PM - 8:00 PM</span>
           </div>
           <div className="flex items-center">
             <MapPin className="mr-2" />
