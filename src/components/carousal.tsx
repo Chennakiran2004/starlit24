@@ -1,4 +1,3 @@
-/* eslint-disable jsx-a11y/img-redundant-alt */
 import React from "react";
 import Slider, { Settings } from "react-slick";
 // Import slick-carousel's CSS in your main component or entry point (index.tsx, App.tsx, etc.)
@@ -15,22 +14,15 @@ interface Testimonial {
 
 // Sample testimonial array with image paths
 const TestimonialsArray: Testimonial[] = [
-  { image: "/image1.jpeg", id: "1" },
-  { image: "/image2.jpeg", id: "2" },
-  { image: "/image3.jpeg", id: "3" },
-  { image: "/image4.jpeg", id: "4" },
-  { image: "/image5.jpeg", id: "5" },
-  { image: "/image6.jpeg", id: "6" },
+  { image: "https://i.ibb.co/XLx5Rty/C1181T01.jpg", id: "1" },
+  { image: "https://i.ibb.co/2gQt8Ms/DSC02857.jpg", id: "2" },
+  { image: "https://i.ibb.co/p21qVq1/C1177T01.jpg", id: "3" },
+  { image: "https://i.ibb.co/dGvdjND/C1159T01.jpg", id: "4" },
+  { image: "https://i.ibb.co/jD8GdQM/DSC02870.jpg", id: "5" },
+  { image: "https://i.ibb.co/FYDMcb4/DSC02918.jpg", id: "6" },
 ];
 
 const Testimonials: React.FC = () => {
-  // const [activeSlide, setActiveSlide] = useState<number>(0);
-
-  // Function to handle the change of slides
-  // const handleBeforeChange = (oldIndex: number, newIndex: number): void => {
-  //   setActiveSlide(newIndex);
-  // };
-
   // Slider settings with responsive breakpoints
   const settings: Settings = {
     dots: true,
@@ -41,28 +33,26 @@ const Testimonials: React.FC = () => {
     autoplaySpeed: 2000, // 2 second autoplay interval
     speed: 1000,
     centerMode: true, // Center mode enabled for larger screens
-    // beforeChange: handleBeforeChange,
     centerPadding: "50px", // Adds padding on both sides of the center slide
     focusOnSelect: true, // Ensures that the centered slide is clickable
-
     responsive: [
       {
         // From 600px to 900px
         breakpoint: 900,
         settings: {
-          centerMode: false, // Enable center mode between 600px and 900px
+          centerMode: false,
           slidesToShow: 2,
           slidesToScroll: 1,
           infinite: true,
           dots: true,
-          centerPadding: "50px", // Padding on each side for smaller screens
+          centerPadding: "50px",
         },
       },
       {
         // Below 600px
         breakpoint: 700,
         settings: {
-          centerMode: false, // Disable center mode for very small screens
+          centerMode: false,
           slidesToShow: 1,
           slidesToScroll: 1,
           infinite: true,
@@ -94,6 +84,19 @@ const Testimonials: React.FC = () => {
           </Slider>
         </div>
       </div>
+      
+      
+  <h2 className="more-images-heading" style={{textAlign:"center"}}>Click for More Images</h2>
+  <div className="drive-link-container">
+    <span
+      className="drive-link"
+      onClick={() => window.open('https://drive.google.com/drive/folders/14TiEZ7W8lTK57dO3QnsSR_GLsblwyVd8?usp=sharing', '_blank')}
+    >
+      Go to Drive
+    </span>
+
+</div>
+
     </div>
   );
 };

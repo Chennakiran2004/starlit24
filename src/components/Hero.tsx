@@ -83,14 +83,10 @@ export function Hero({ handleTimerCompletion }: HeroProps) {
 
       {/* Content */}
       <div className="relative z-10 text-center text-white px-4 max-w-5xl mx-auto">
-        <div style={{ display: 'flex', justifyContent: 'center' }}>
-          <img
-            src="https://i.ibb.co/HV8DpnR/final-pic-1.png"
-            style={{ height: '300px', width: '300px' }}
-            alt="Event logo"
-          />
-        </div>
-        <h1 className="text-5xl md:text-7xl font-bold mb-6">NIAT<span className="StarlitFont" style={{ color: '#FEDE6C' }}> STARLIT </span>2024</h1>
+         <div style={{display:"flex", justifyContent:"center"}}>
+          <img src="https://i.ibb.co/HV8DpnR/final-pic-1.png" alt='Home' style={{height:"300px", width:"300px"}}/>
+         </div>
+        <h1 className="text-5xl md:text-7xl font-bold mb-6">NIAT Starlit 2024</h1>
         <p className="text-xl md:text-2xl mb-12">"A Day of Glitz, Glamour, and New Beginnings!"</p>
 
         <CountdownTimer onTimerComplete={handleTimerCompletion} />
@@ -98,7 +94,7 @@ export function Hero({ handleTimerCompletion }: HeroProps) {
         <div className="flex flex-col md:flex-row items-center justify-center gap-6 mt-12 mb-8">
           <div className="flex items-center">
             <Calendar className="mr-2" />
-            <span>December 13, 2024 | 2:00 AM - 8:00 PM</span>
+            <span>December 13, 2024 | 2:00 PM - 8:00 PM</span>
           </div>
           <div className="flex items-center">
             <MapPin className="mr-2" />

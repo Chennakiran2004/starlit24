@@ -1,138 +1,213 @@
+/* Global styles */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  .carroms-app {
-    font-family: 'Arial', sans-serif;
-    background: #f3f4f6;
-    color: #333;
-    width: 100vw;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-    overflow: auto;
-  }
-  
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.carroms-app {
+  font-family: 'Arial', sans-serif;
+  background: #f3f4f6;
+  color: #333;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 20px;
+  overflow: auto;
+}
+
+.carroms-header {
+  background-color: #1e2a47;
+  color: #fff;
+  padding: 20px 40px;
+  width: 100%;
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-top: 70px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  position: relative; /* Allow positioning of the back button */
+}
+
+.carroms-header h1 {
+  margin-bottom: 10px;
+  padding-left: 51px;
+  text-align: center !important;
+}
+
+/* Back button container */
+.carroms-back-button-container {
+  position: absolute; /* Absolute position to the top-left corner */
+  top: 20px;
+  left: 20px;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+}
+
+.carroms-back-button {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px;
+  font-size: 1.2rem;
+  border-radius: 50%;
+  transition: background-color 0.3s, transform 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.carroms-back-button img {
+  width: 20px;
+  height: 20px;
+}
+
+.carroms-back-button:hover {
+  transform: scale(1.1);
+}
+
+.carroms-container {
+  max-width: 900px;
+  width: 100%;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  margin-top: 40px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Section titles */
+.carroms-section-title {
+  color: #2f3e56;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  border-bottom: 2px solid #ff6f61;
+  padding-bottom: 5px;
+}
+
+/* List styles */
+.carroms-list {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.carroms-list-item {
+  font-size: 1.2rem;
+  padding: 10px 0;
+  line-height: 1.6;
+  color: #555;
+  display: flex;
+  padding-left: 10px;
+  align-items: center;
+}
+
+/* Custom bullet points */
+.carroms-list-item::before {
+  content: '';
+  width: 20px;
+  height: 20px;
+  background-color: #ff6f61;
+  clip-path: polygon(100% 50%, 0 100%, 100% 0);
+  margin-right: 15px;
+}
+
+/* Footer */
+.carroms-footer {
+  text-align: center;
+  padding: 15px 0;
+  background-color: #1e2a47;
+  color: #fff;
+  font-size: 1rem;
+  width: 100%;
+  position: relative;
+  margin-top: 40px;
+}
+
+/* Media Queries for responsiveness */
+@media screen and (max-width: 768px) {
   .carroms-header {
-    background-color: #1e2a47;
-    color: #fff;
-    padding: 20px 40px;
-    width: 100%;
-    text-align: center;
-    font-size: 2.5rem;
-    font-weight: bold;
-    margin-top: 70px;
-    border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px;
-  }
-  
-  .carroms-header h1 {
-    margin-bottom: 10px;
-  }
-  
-  .carroms-back-button-container {
-    position: relative;
-    padding-top: 30px;
-    display: flex;
-    justify-content: flex-start;
-    margin-top: -20px; /* Pull the back button slightly up */
-    width: 100%;
-    padding-left: 20px;
-  }
-  
-  .carroms-back-button {
-    background-color: #ff6f61;
-    color: #fff;
-    text-decoration: none;
-    padding: 10px 20px;
-    font-size: 1rem;
-    border-radius: 5px;
-    transition: background-color 0.3s, transform 0.3s;
-  }
-  
-  .carroms-back-button:hover {
-    background-color: #f85f44;
-    transform: scale(1.1);
-  }
-  
-  .carroms-container {
-    max-width: 900px;
-    width: 100%;
-    background-color: #fff;
     padding: 20px;
-    border-radius: 15px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    margin-top: 40px;
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    font-size: 2rem;
   }
-  
+
+  .carroms-container {
+    padding: 15px;
+    margin-top: 20px;
+  }
+
   .carroms-section-title {
-    color: #2f3e56;
-    font-size: 1.8rem;
-    margin-bottom: 20px;
-    text-transform: uppercase;
-    font-weight: 600;
-    border-bottom: 2px solid #ff6f61;
-    padding-bottom: 5px;
+    font-size: 1.6rem;
   }
-  
-  .carroms-list {
-    list-style-type: none;
-    padding-left: 0;
-    margin-bottom: 20px;
-  }
-  
+
   .carroms-list-item {
-    font-size: 1.2rem;
-    padding: 10px 0;
-    line-height: 1.6;
-    color: #555;
-    display: flex;
-    align-items: center;
-  }
-  
-  .carroms-list-item::before {
-    content: '';
-    width: 20px;
-    height: 20px;
-    background-color: #ff6f61;
-    clip-path: polygon(100% 50%, 0 100%, 100% 0);
-    margin-right: 15px;
-  }
-  
-  .carroms-footer {
-    text-align: center;
-    padding: 15px 0;
-    background-color: #1e2a47;
-    color: #fff;
     font-size: 1rem;
-    width: 100%;
-    position: relative;
-    margin-top: 40px;
   }
-  
-  @media screen and (max-width: 768px) {
-    .carroms-header h1 {
-      font-size: 2rem;
-    }
-  
-    .carroms-container {
-      padding: 15px;
-    }
-  
-    .carroms-section-title {
-      font-size: 1.6rem;
-    }
-  
-    .carroms-list-item {
-      font-size: 1rem;
-    }
+
+  .carroms-back-button-container {
+    padding-left: 10px;
+    padding-top: 15px;
   }
+
+  .carroms-back-button {
+    font-size: 1rem;
+    padding: 6px;
+  }
+
+  .carroms-back-button img {
+    width: 18px;
+    height: 18px;
+  }
+
+  .carroms-footer {
+    padding: 10px;
+    font-size: 0.9rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .carroms-header {
+    font-size: 1.8rem;
+    padding: 15px;
+  }
+
+  .carroms-container {
+    padding: 10px;
+  }
+
+  .carroms-section-title {
+    font-size: 1.4rem;
+  }
+
+  .carroms-list-item {
+    font-size: 0.9rem;
+  }
+
+  .carroms-back-button-container {
+    padding-left: 8px;
+    padding-top: 10px;
+  }
+
+  .carroms-back-button {
+    font-size: 0.9rem;
+    padding: 7px;
+  }
+
+  .carroms-back-button img {
+    width: 16px;
+    height: 16px;
+  }
+
+  .carroms-footer {
+    padding: 8px;
+    font-size: 0.8rem;
+  }
+}

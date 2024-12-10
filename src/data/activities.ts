@@ -2,11 +2,22 @@ export const activities = [
   {
     id: "Quizzotopia",
     title: "Quizzotopia",
-    time: "12:00 PM - 1:30 PM",
-    date: "othertime",
-    description: "Test your knowledge in this exciting quiz competition",
+    time: "Final hungama starts from 5:00PM",
+    date: "today",
+    description: "Take a breath and enjoy the wait for the Qyizzotopia finals! 😊",
     location: "Main Auditorium",
     category: "Cultural",
+    buttonElement:"True"
+  },
+
+  {
+    id: "Debate",
+    title: "Debate Competition",
+    time: "Final Argument starts from 6:00PM",
+    date: "today",
+    description: "Where opinions collide 💥 and the best argument wins the mic 🎤!",
+    location: "Main Auditorium",
+    category: "ArtsShowCase",
     buttonElement:"True"
   },
 
@@ -34,7 +45,7 @@ export const activities = [
   {
     id: "FreeFire",
     title: "Free Fire",
-    date: "othertime",
+    date: "past",
     time: "4:30 PM - 7:00 PM",
     description: "🔥 Garena Free Fire Finals 🏆The ultimate battle is on 10th Dec 2024! 🎮 Don’t miss it!",
     location: "Free Fire Gareena",
@@ -43,7 +54,7 @@ export const activities = [
   },
   {
     id: "TableTennies",
-    title: "Table Tennis 🏓",
+    title: "Table Tennis",
     description:
       "TableTennies League is on! League matches are done. Check the upcoming events for what’s next!",
     date: "past",
@@ -53,10 +64,10 @@ export const activities = [
   },
   {
     id: "TableTennies",
-    title: "Table Tennis 🏓",
+    title: "Table Tennis",
     description:
       "TableTennies Finals 🏆The ultimate battle is on 10th Dec 2024! Don’t miss it!",
-    date: "othertime",
+    date: "past",
     time: "4:30 PM - 7:00 PM",
     category: "IndoorSports",
     buttonElement:"True"
@@ -77,13 +88,13 @@ export const activities = [
     description:
       "Chess Finals 🏆The ultimate battle is on 10th Dec 2024! Don’t miss it!",
     time: "4:30 PM - 7:00 PM",
-    date: "othertime",
+    date: "past",
     category: "IndoorSports",
     buttonElement:"True"
   },
   {
     id: "FooseBall",
-    title: "Foosball 🏉",
+    title: "Foosball",
     date: "past",
     description:
       "FooseBall League is on! League matches are done. Check the upcoming events for what’s next!",
@@ -93,8 +104,8 @@ export const activities = [
   },
   {
     id: "FooseBall",
-    title: "Foosball 🏉",
-    date: "othertime",
+    title: "Foosball",
+    date: "past",
     description:
       "FooseBall Finals 🏆The ultimate battle is on 10th Dec 2024! Don’t miss it!",
     time: "4:30 PM - 7:00 PM",
@@ -103,7 +114,7 @@ export const activities = [
   },
   {
     id: "Carroms",
-    title: "Carroms 🎴",
+    title: "Carroms",
     date: "past",
     description:
       "Carroms League is on! League matches are done. Check the upcoming events for what’s next!",
@@ -113,8 +124,8 @@ export const activities = [
   },
   {
     id: "Carroms",
-    title: "Carroms 🎴",
-    date: "othertime",
+    title: "Carroms",
+    date: "past",
     description:
       "Carroms Finals 🏆The ultimate battle is on 10th Dec 2024! Don’t miss it!",
     time: "4:30 PM - 7:00 PM",
@@ -124,7 +135,7 @@ export const activities = [
   {
     id: "AirHockey",
     title: "Air Hockey",
-    date: "pas",
+    date: "past",
     description: "Experience the excitement of fast-paced air hockey battles.",
     time: "4:30 PM - 7:00 PM",
     category: "IndoorSports",
@@ -135,8 +146,17 @@ export const activities = [
     title: "Generative AI Short Film Making",
     date: "today",
     description: "Gen AI is a sci-fi short film 🤖 where an AI surpasses its creator, questioning its purpose and existence 🌐. Deadline is on 10th Dec.",
-    time: "After study hours",
+    time: "Project Submission today",
     category: "Technical",
+    buttonElement:"True"
+  },
+  {
+    id: "Openmic",
+    title: "Open Mic",
+    date: "past",
+    description: "Unleash your talent, take the stage, and shine at the Open Mic Event! 🎤✨",
+    time: "5:00PM - 7:00PM",
+    category: "ArtsShowCase",
     buttonElement:"True"
   },
   {
@@ -144,7 +164,7 @@ export const activities = [
     title: "Website Making",
     date: "today",
     description: "Website integration 🔧 helps connect cool tools and services to make your site work smoothly and give users an awesome experience Deadline is on 10th Dec.",
-    time: "After Studyhours",
+    time: "Project Submission today",
     category: "Technical",
     buttonElement:"True"
   },
@@ -161,7 +181,7 @@ export const activities = [
   {
     id: "Rampwalk",
     title: "Ramp Walk",
-    date: "today",
+    date: "othertime",
     description: "Ramp walk 👗 is when models confidently rock the runway, showing off stylish outfits and having fun while doing it ✨.",
     time: "4:30 PM - 7:00 PM",
     category: "Cultural",

@@ -18,6 +18,8 @@ import FoosballRules from './components/fooseball';
 import GenAIVideoSubmissionForm from "./components/genai";
 import WebsiteAboutSection from "./components/website";
 import RampWalk from "./components/rampwalk";
+import OpenMicEventGuidelines from "./components/openmic";
+import DebateSubmissionForm from "./components/debate";
 import StartingPage from "./components/intro";
 import Navbar  from "./components/Navbar";
 function ScrollToTop() {
@@ -52,6 +54,8 @@ function AppOuter() {
         <Route path="/activity/FooseBall" element={<FoosballRules />} />
         <Route path="/activity/Genai" element={<GenAIVideoSubmissionForm />} />
         <Route path="/activity/Website" element={<WebsiteAboutSection />} />
+        <Route path="/activity/Openmic" element={<OpenMicEventGuidelines />} />
+        <Route path="/activity/Debate" element={<DebateSubmissionForm />} />
       </Routes>
       {pathname !== "/" && <Contact />}
     </>

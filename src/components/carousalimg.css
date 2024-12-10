@@ -10,6 +10,66 @@
   /* Ensure padding doesn't cause overflow */
 }
 
+/* Style for the 'Click for More Images' container */
+.more-images-container {
+  text-align: center;
+  margin-top: 40px; /* Space between gallery and the 'Click for More Images' section */
+  padding: 20px;
+  background-color: #f8f8f8; /* Light background color */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Style for the heading text */
+.more-images-heading {
+  font-size: 1.5rem; /* Slightly larger text */
+  font-weight: 700; /* Bold text */
+  color: #6b21a8; /* Rich purple color */
+  margin-bottom: 20px; /* Space below the heading */
+  text-transform: uppercase; /* Uppercase text */
+  letter-spacing: 1px; /* Spacing between letters for a clean look */
+}
+
+/* Style for the 'Go to Drive' clickable span */
+.drive-link {
+  font-size: 1.2rem; /* A bit smaller than the heading */
+  font-weight: 600; /* Bold for emphasis */
+  color: #0073e6; /* Bright blue color */
+  cursor: pointer;
+  text-decoration: none; /* No underline by default */
+  transition: color 0.3s, transform 0.3s; /* Smooth transitions */
+}
+
+.drive-link:hover {
+  color: #005bb5; /* Darker blue on hover */
+  transform: scale(1.1); /* Slightly enlarge when hovered for interaction feedback */
+}
+
+.drive-link:focus {
+  outline: none; /* Remove outline when focused */
+}
+
+.drive-link:active {
+  color: #0048a1; /* Even darker blue when clicked */
+  transform: scale(0.95); /* Shrink slightly when clicked */
+}
+
+/* Optional: Add some padding around the text */
+.drive-link-container {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #f0f0f0;
+  border-radius: 50px; /* Round the edges for a pill-like button */
+  transition: background-color 0.3s;
+}
+
+.drive-link-container:hover {
+  background-color: #ececec;
+}
+
+
+
 .heading {
   text-align: center;
   margin-bottom: 30px;

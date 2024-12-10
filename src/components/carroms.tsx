@@ -5,12 +5,13 @@ const CarromsCompetitionRules = () => {
   return (
     <div className="carroms-app">
       <header className="carroms-header">
+        <div className="carroms-back-button-container">
+          <a href="/Home" className="carroms-back-button">
+            <img src='/back-arrow.svg' alt='Back' className='backbuttonCon' style={{ height: "20px" }} />
+          </a>
+        </div>
         <h1>Carrom Competition Rules</h1>
       </header>
-
-      <div className="carroms-back-button-container">
-        <a href="/Home" className="carroms-back-button">Back</a>
-      </div>
 
       <div className="carroms-container">
         <h2 className="carroms-section-title">Objective</h2>
