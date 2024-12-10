@@ -2,8 +2,8 @@ export const activities = [
   {
     id: "Quizzotopia",
     title: "Quizzotopia",
-    time: "starts from 5:00PM",
-    date: "othertime",
+    time: "Final hungama starts from 5:00PM",
+    date: "today",
     description: "Take a breath and enjoy the wait for the Qyizzotopia finals! 😊",
     location: "Main Auditorium",
     category: "Cultural",
@@ -13,7 +13,7 @@ export const activities = [
   {
     id: "Debate",
     title: "Debate Competition",
-    time: "starts from 5:00PM",
+    time: "Final Argument starts from 6:00PM",
     date: "today",
     description: "Where opinions collide 💥 and the best argument wins the mic 🎤!",
     location: "Main Auditorium",
@@ -153,7 +153,7 @@ export const activities = [
   {
     id: "Openmic",
     title: "Open Mic",
-    date: "today",
+    date: "past",
     description: "Unleash your talent, take the stage, and shine at the Open Mic Event! 🎤✨",
     time: "5:00PM - 7:00PM",
     category: "ArtsShowCase",
@@ -162,9 +162,9 @@ export const activities = [
   {
     id: "Website",
     title: "Website Making",
-    date: "othertime",
+    date: "today",
     description: "Website integration 🔧 helps connect cool tools and services to make your site work smoothly and give users an awesome experience Deadline is on 10th Dec.",
-    time: "After Studyhours",
+    time: "Project Submission today",
     category: "Technical",
     buttonElement:"True"
   },
