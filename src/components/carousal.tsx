@@ -90,7 +90,7 @@ const Testimonials: React.FC = () => {
   <div className="drive-link-container">
     <span
       className="drive-link"
-      onClick={() => window.open('https://drive.google.com', '_blank')}
+      onClick={() => window.open('https://drive.google.com/drive/folders/14TiEZ7W8lTK57dO3QnsSR_GLsblwyVd8?usp=sharing', '_blank')}
     >
       Go to Drive
     </span>
