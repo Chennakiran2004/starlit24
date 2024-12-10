@@ -7,6 +7,7 @@ const PopperElement = () => {
     if (window.confetti) {
       window.confetti({
         particleCount: 1800,
+        gravity: 0.1,
         spread: 100,
         origin: { x: 1, y: 0.999 },
       });
@@ -14,6 +15,7 @@ const PopperElement = () => {
       window.confetti({
         particleCount: 1800,
         spread: 100,
+        gravity: 0.1,
         origin: { x: 0, y: 0.999 },
       });
     }
