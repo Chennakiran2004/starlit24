@@ -1,0 +1,215 @@
+/* Global styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .debate-app {
+    font-family: 'Arial', sans-serif;
+    background: #f3f4f6;
+    color: #333;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 20px;
+    overflow: auto;
+  }
+  
+  .debate-back-button-container img {
+    width: 40px;
+  }
+  
+  .debate-header {
+    background-color: #1e2a47;
+    color: #fff;
+    padding: 40px 8px;
+    width: 90%;
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-top: 70px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    position: relative;
+  }
+  
+  .debate-header h1 {
+    margin-bottom: 10px;
+    margin-left:25px;
+  }
+  
+  /* Back button container */
+  .debate-back-button-container {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    margin-right:5px
+  }
+  
+  .debate-back-button {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    font-size: 1.2rem;
+    border-radius: 50%;
+    transition: background-color 0.3s, transform 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .debate-back-button img {
+    width: 25px;
+    height: 25px;
+  }
+  
+  .debate-back-button:hover {
+    transform: scale(1.1);
+  }
+  
+  .debate-container {
+    max-width: 900px;
+    width: 100%;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    margin-top: 40px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  /* Section titles */
+  .debate-section-title {
+    color: #2f3e56;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-weight: 600;
+    padding-bottom: 5px;
+  }
+  
+  /* List styles */
+  .debate-list {
+    list-style-type: none;
+    padding-left: 0;
+    margin-bottom: 20px;
+  }
+  
+  .debate-list-item {
+    font-size: 1.2rem;
+    padding: 10px 0;
+    line-height: 1.6;
+    color: #555;
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Custom bullet points */
+  .debate-list-item::before {
+    content: '';
+    width: 20px;
+    height: 20px;
+    clip-path: polygon(100% 50%, 0 100%, 100% 0);
+    margin-right: 15px;
+  }
+  
+  /* Footer */
+  .debate-footer {
+    text-align: center;
+    padding: 15px 0;
+    background-color: #1e2a47;
+    color: #fff;
+    font-size: 1rem;
+    width: 100%;
+    position: relative;
+    margin-top: 40px;
+  }
+  
+  /* Media Queries for responsiveness */
+  @media screen and (max-width: 768px) {
+    .debate-header h1 {
+      font-size: 2rem;
+    }
+  
+    .debate-container {
+      padding: 15px;
+    }
+  
+    .debate-section-title {
+      font-size: 1.6rem;
+    }
+  
+    .debate-list-item {
+      font-size: 1rem;
+    }
+  
+    .debate-back-button-container {
+      padding-left: 10px;
+      padding-top: 15px;
+    }
+  
+    .debate-back-button {
+      font-size: 1rem;
+      padding: 6px;
+    }
+  
+    .debate-back-button img {
+      width: 18px;
+      height: 18px;
+    }
+  
+    .debate-footer {
+      padding: 10px;
+      font-size: 0.9rem;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .debate-header {
+      font-size: 1.8rem;
+      padding: 15px;
+    }
+  
+    .debate-container {
+      padding: 10px;
+    }
+  
+    .debate-section-title {
+      font-size: 1.4rem;
+    }
+  
+    .debate-list-item {
+      font-size: 0.9rem;
+    }
+  
+    .debate-back-button-container {
+      padding-left: 8px;
+      padding-top: 10px;
+    }
+  
+    .debate-back-button {
+      font-size: 0.9rem;
+      padding: 7px;
+    }
+  
+    .debate-back-button img {
+      width: 16px;
+      height: 16px;
+    }
+  
+    .debate-footer {
+      padding: 8px;
+      font-size: 0.8rem;
+    }
+  }
+  
