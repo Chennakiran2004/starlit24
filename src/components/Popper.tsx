@@ -6,14 +6,14 @@ const PopperElement = () => {
     // Trigger confetti on button click
     if (window.confetti) {
       window.confetti({
-        particleCount: 1800,
-        spread: 100,
-        origin: { x: 1, y: 0.999 },
+        particleCount: 1400,
+        spread: 60,
+        origin: { x: 0.9, y: 0.999 },
       });
 
       window.confetti({
-        particleCount: 1800,
-        spread: 100,
+        particleCount: 1400,
+        spread: 60,
         origin: { x: 0, y: 0.999 },
       });
     }

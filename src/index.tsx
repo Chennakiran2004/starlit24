@@ -34,13 +34,14 @@ function ScrollToTop() {
 }
 function AppOuter() {
   const { pathname } = useLocation();
+
   return (
     <>
 
       {pathname !== "/" &&  <Navbar  />}
       <ScrollToTop />
       <Routes>
-        <Route path="/" element={<StartingPage />} />
+        <Route path="/" element={<StartingPage/>} />
         <Route path="/Home" element={<App  />} />
         <Route path="/activity/IndoorGames" element={<ActivityDetails />} />
         <Route path="/activity/Quizzotopia" element={<Quizzotopia />} />
