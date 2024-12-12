@@ -3,12 +3,10 @@ import { ActivityCard } from "./ActivityCard";
 import { activities } from "../../data/activities";
 
 export function ActivitiesSection() {
-  const [filter, setFilter] = useState<"Previous Events" | "Today" | "Upcoming Events">("Today");
+  const [filter, setFilter] = useState<"Previous Events" | "Upcoming Events">("Upcoming Events");
 
   const filteredActivities =
-    filter === "Today"
-      ? activities.filter((activity) => activity.date === "today")
-      : filter === "Upcoming Events"
+    filter === "Upcoming Events"
       ? activities.filter((activity) => activity.date !== "today" && activity.date !== "past")
       : activities.filter((activity) => activity.date === "past");
 
@@ -30,7 +28,7 @@ export function ActivitiesSection() {
         </p>
 
         <div className="flex justify-center gap-4 mb-12 flex-wrap">
-          {["Previous Events", "Today", "Upcoming Events"].map((category) => (
+          {["Previous Events", "Upcoming Events"].map((category) => (
             <button
               key={category}
               onClick={() => setFilter(category as any)}
@@ -47,7 +45,7 @@ export function ActivitiesSection() {
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {filteredActivities.map((activity, index) => {
-            const { id, title, time, description, location, category,buttonElement } = activity;
+            const { id, title, time, description, location, category, buttonElement } = activity;
             return (
               <ActivityCard
                 key={index}
@@ -56,7 +54,7 @@ export function ActivitiesSection() {
                 time={time}
                 description={description}
                 location={location || ""}
-                category={category as  "Cultural" | "IndoorSports" | "Technical" | "ArtsShowCase" |"ESports"}
+                category={category as "Cultural" | "IndoorSports" | "Technical" | "ArtsShowCase" | "ESports"}
                 buttonElement={buttonElement}
               />
             );
