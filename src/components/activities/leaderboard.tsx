@@ -22,7 +22,7 @@ const LeaderboardLineChart: React.FC = () => {
     { className: "s2", points: 30 },
     { className: "s3", points: 0 },
     { className: "s4", points: 20 },
-    { className: "s5", points: 0 },
+    { className: "s5", points: 50 },
     { className: "s6", points: 20 },
     { className: "s7", points: 30 },
     { className: "s8", points: 0 },
