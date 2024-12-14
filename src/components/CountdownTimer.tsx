@@ -16,7 +16,6 @@ export function CountdownTimer({ onTimerComplete }: CountdownTimerProps){
     const eventDate = new Date('2024-12-13T13:55:00').getTime();
     const now = new Date().getTime();
     const difference = eventDate - now;
-
     if (difference > 0) {
       return {
         days: Math.floor(difference / (1000 * 60 * 60 * 24)),

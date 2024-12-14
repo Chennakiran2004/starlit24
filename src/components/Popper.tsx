@@ -6,15 +6,29 @@ const PopperElement = () => {
     // Trigger confetti on button click
     if (window.confetti) {
       window.confetti({
-        particleCount: 1400,
-        spread: 60,
-        origin: { x: 0.9, y: 0.999 },
+        particleCount: 2000,
+        spread: 100,
+        angle: 120,
+        origin: { x: 1, y: 1},
       });
 
       window.confetti({
-        particleCount: 1400,
-        spread: 60,
+        particleCount: 2000,
+        spread: 100,
+        angle: 60,
         origin: { x: 0, y: 0.999 },
+      });
+      window.confetti({
+        particleCount: 2500,
+        spread: 60,
+        // angle: 60,
+        origin: { x: 0, y: 0 },
+      });
+      window.confetti({
+        particleCount: 2500,
+        spread: 60,
+        // angle: 60,
+        origin: { x: 0.7, y: 0 },
       });
     }
   };
